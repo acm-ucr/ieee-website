@@ -19,8 +19,8 @@ module.exports = {
       },
       plugins: [require("@tailwindcss/aspect-ratio")],
       fontFamily: {
-        teko: ["Teko"],
-        corben: ["Corben"],
+        teko: "var(--teko-font)",
+        giden: "var(--giden-font)",
       },
     },
   },
