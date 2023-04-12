@@ -9,7 +9,7 @@ const JoinCard = ({ name, color, icon, link }) => {
       case "discord":
         return (
           <BsDiscord
-            className={`text-6xl mt-3 mb-2 
+            className={`text-6xl mt-3 mb-1 
             text-${states === 0 ? color : "white"}
             `}
           />
@@ -44,11 +44,11 @@ const JoinCard = ({ name, color, icon, link }) => {
 
   return (
     <div
-      className={` h-64 w-48 flex flex-col items-center 
+      className={` h-60 w-44 flex flex-col items-center 
       bg-${states === 0 ? "white" : color}
       `}
     >
-      <div className="w-full h-5 bg-ieee-purple" />
+      <div className={`w-full h-5 bg-${color}`} />
       {getIcon()}
       <p
         className={`font-teko text-4xl mb-2 
@@ -65,7 +65,7 @@ const JoinCard = ({ name, color, icon, link }) => {
         noreferrer="noopener"
       >
         <button
-          className={`pb-1 pt-1 w-28 font-teko mt-3 mb-4 border-3 text-4xl 
+          className={`pb-1 pt-1 w-28 font-teko mt-3 border-3 text-4xl 
           border-${states === 0 ? color : "white"} 
           text-${states === 0 ? color : "white"} 
           bg-${states === 1 ? color : "white"}
