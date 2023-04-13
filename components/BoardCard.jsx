@@ -1,7 +1,11 @@
 import React from "react";
 
 const BoardCard = () => {
-  return <div>BoardCard</div>;
+  return (
+    <div>
+      
+    </div>
+  );
 };
 
 export default BoardCard;
