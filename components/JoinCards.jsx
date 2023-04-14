@@ -19,7 +19,7 @@ const JoinCards = () => {
         />
 
         <JoinCard
-          name="Hignlander Link"
+          name="Highlander Link"
           color="ieee-blue"
           icon="link"
           link="https://highlanderlink.ucr.edu/organization/ieee"
