@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="relative flex-grow ml-4">
             <img
               src={ieeelogo.src}
-              class="absolute h-12 inset-x-0 bottom-2"
+              className="absolute h-12 inset-x-0 bottom-2"
               alt="IEEE Logo"
             />
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
             <div>Riverside, CA 92501</div>
           </div>
 
-          <div class="m-auto pl-5 space-y-5 ">
+          <div className="m-auto pl-5 space-y-5 ">
             <BsDiscord size={40} />
             <GrMail size={40} />
           </div>
