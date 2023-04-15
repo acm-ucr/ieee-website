@@ -15,5 +15,5 @@ export default function board() {
       <BoardCard />
       <BoardCard />
     </div>
-  )
+  );
 }
