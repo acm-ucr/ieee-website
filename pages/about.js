@@ -5,10 +5,22 @@ import Title from "@/components/Title";
 export default function about() {
   return (
     <div className="mb-20 relative w-full overflow-hidden">
-      <img className="z-0 -rotate-12 absolute -left-20 w-[600px] h-[600px]" src="/assets/triangle.svg " />
-      <img className="z-0 rotate-12 absolute -right-20 top-24 w-[700px] h-[800px]" src="/assets/triangle.svg" />
-      <img className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]" src="/assets/gear-stroke-pink-blue.svg" />
-      <img className=" z-0 left-52 absolute bottom-48 w-[110px]" src="/assets/gear-lightblue.svg" />
+      <img
+        className="z-0 -rotate-12 absolute -left-20 w-[600px] h-[600px]"
+        src="/assets/triangle.svg "
+      />
+      <img
+        className="z-0 rotate-12 absolute -right-20 top-24 w-[700px] h-[800px]"
+        src="/assets/triangle.svg"
+      />
+      <img
+        className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]"
+        src="/assets/gear-stroke-pink-blue.svg"
+      />
+      <img
+        className=" z-0 left-52 absolute bottom-48 w-[110px]"
+        src="/assets/gear-lightblue.svg"
+      />
       <div className="flex w-full justify-center">
         <div className="mt-3 w-1/2 flex items-center flex-col ">
           <Title title="Who We Are" />
