@@ -9,7 +9,7 @@ const Join = () => {
       <div className="max-w-2xl text-center">
         <p
           className="text-2xl leading-12 font-medium font-serif"
-          style={{ fontFamily: "Gideon Roman" }}
+          style={{ fontFamily: 'var(--giden-font)' }}
         >
           To become a student member, follow us online and show up to any
           meetings, events, or projects that interest you.
@@ -17,10 +17,9 @@ const Join = () => {
       </div>
 
       <div className="w-full max-w-2xl">
-        <img src="pictures/index4.png" className="mx-auto w-full"/>
+        <img src="pictures/index4.png" className="mx-auto w-full" />
         <JoinCards />
       </div>
-
     </div>
   );
 };
