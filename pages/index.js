@@ -6,7 +6,7 @@ import Title from "@/components/Title";
 
 export default function Home() {
   return (
-    <div className="bg-ieee-black">
+    <div>
       <Title title="About IEEE" />
       <Landing />
       <About />
