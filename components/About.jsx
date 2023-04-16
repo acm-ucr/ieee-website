@@ -6,9 +6,9 @@ const About = () => {
       <div className="flex flex-col items-center">
         <Title title="About IEEE" />
         <p className="text-center text-xl w-9/12 m-3 font-giden">
-          IEEE (pronounced "I triple E") is the Institute of Electrical and
-          Electronics Engineers. We are a group dedicated to professionalism,
-          connections, and our projects.
+          IEEE &#40; pronounced "I triple E" &#41; is the Institute of
+          Electrical and Electronics Engineers. We are a group dedicated to
+          professionalism, connections, and our projects.
         </p>
       </div>
 
