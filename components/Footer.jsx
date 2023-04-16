@@ -5,8 +5,9 @@ import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black z-0 w-full pt-12">
-      <div className="w-full bg-cover  bg-no-repeat bg-[url('../public/assets/wave.svg')]">
+    <footer className="w-full relative">
+      <img src="/assets/footer.svg" className="w-full " alt="background" />
+      <div className="w-full absolute bottom-0">
         <div className="flex p-8 space-x-4">
           <div className="relative flex-grow ml-4">
             <img
