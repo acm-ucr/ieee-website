@@ -40,8 +40,8 @@ const cards = [
 
 const JoinCards = () => {
   return (
-    <div className=" pb-5 pt-5 bg-ieee-black flex justify-center">
-      <div className=" w-2/3 flex items-center justify-evenly ">
+    <div className=" pb-5 pt-5 bg-ieee-black flex justify-center w-full">
+      <div className=" w-2/3 flex items-center justify-evenly">
         {cards.map((card, index) => (
           <JoinCard
             key={index}
