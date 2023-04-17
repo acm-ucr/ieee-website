@@ -1,15 +1,14 @@
 import React from "react";
 import Landing from "@/components/Landing";
 import About from "@/components/About";
-import Title from "@/components/Title";
-// const inter = Inter({ subsets: ["latin"] });
+import JoinCards from "@/components/JoinCards";
 
 export default function Home() {
   return (
     <div>
-      <Title title="About IEEE" />
       <Landing />
       <About />
+      <JoinCards />
     </div>
   );
 }

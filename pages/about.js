@@ -2,7 +2,7 @@ import React from "react";
 import pic from "../public/pictures/index3.jpg";
 import Title from "@/components/Title";
 
-export default function about() {
+const about = () => {
   return (
     <div className="mb-20 relative w-full overflow-hidden">
       <img
@@ -33,7 +33,7 @@ export default function about() {
             className="w-full mt-10 mb-20 z-50"
             src={pic.src}
             alt="picture of students holding prizes"
-          ></img>
+          />
 
           <Title title="Our Mission" />
 
@@ -49,4 +49,5 @@ export default function about() {
       </div>
     </div>
   );
-}
+};
+export default about;
