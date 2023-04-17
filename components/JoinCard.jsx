@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 const JoinCard = ({ name, text, background, border, icon, link }) => {
   const [states, setStates] = useState(0);
-  console.log(border);
 
   return (
     <div
