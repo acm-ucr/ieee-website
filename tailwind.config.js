@@ -17,12 +17,11 @@ module.exports = {
           black: "#001220",
         },
       },
-      plugins: [require("@tailwindcss/aspect-ratio")],
       fontFamily: {
         teko: "var(--teko-font)",
         giden: "var(--giden-font)",
       },
     },
   },
-  plugins: [],
+  // plugins: [require("@tailwindcss/aspect-ratio")],
 };
