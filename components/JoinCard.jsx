@@ -27,7 +27,7 @@ const JoinCard = ({ name, text, background, border, icon, link }) => {
         noreferrer="noopener"
       >
         <button
-          className={`pb-1 pt-1 w-28 font-teko mt-3 border-3 text-4xl 
+          className={`pb-1 pt-1 w-28 font-teko mt-3 border-2 text-4xl
           ${states === 0 ? border : "border-white"} 
           ${states === 0 ? text : "text-white"} 
           ${states === 1 ? background : "bg-white"}
