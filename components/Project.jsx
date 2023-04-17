@@ -1,15 +1,22 @@
 import React from "react";
+import solarcar2 from "../public/pictures/solarcar2.png";
+import solarcar1 from "../public/pictures/solarcar1.png";
+import UAS1 from "../public/pictures/UAS1.png";
+import UAS2 from "../public/pictures/UAS2.png";
+import RoboSub1 from "../public/pictures/RoboSub1.png";
+import RoboSub2 from "../public/pictures/RoboSub2.png";
+import index4 from "../public/pictures/index4.png";
 
 const Project = () => {
   return (
     <div>
-      <h2 className="m-10 font-teko">Solar Car</h2>
+      <h2 className="indent-32 m-10 font-teko">Solar Car</h2>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row space-x-4">
-          <img src="public/pictures/solarcar2.png"></img>
-          <img src="public/pictures/solarcar1.png"></img>
+        <div className="flex flex-row space-x-6">
+          <img src={solarcar2.src}/>
+          <img src={solarcar1.src}/>
         </div>
-        <p className="text-center text-xl w-2/5 m-10 font-giden">
+        <p className="text-center text-xl w-2/5 m-28 font-giden">
           The University of California Riverside Solar Car team consists of many
           talented, undergraduate students who aim to construct a full-scaled
           solar car to compete in the Formula Sun Grand Prix, and the American
@@ -19,13 +26,13 @@ const Project = () => {
         </p>
       </div>
       <div>
-        <h2 className="m-10 font-teko">Unmanned Aerial Systems</h2>
+        <h2 className="indent-48 m-10 font-teko">Unmanned Aerial Systems</h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
-            <img src="public/pictures/UAS1.png"></img>
-            <img src="public/pictures/UAS2.png"></img>
+            <img src={UAS1.src}/>
+            <img src={UAS2.src}/>
           </div>
-          <p className="text-center text-xl w-2/5 m-10 font-giden">
+          <p className="text-center text-xl w-2/5 m-28 font-giden">
             UCR Unmanned Aerial Systems is a highly-motivated and
             interdisciplinary group of students designing, constructing and
             programming an autonomous aerial vehicle to compete in the annual
@@ -35,13 +42,13 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="m-10 font-teko">RoboSub</h2>
+        <h2 className="indent-36 m-10 font-teko">RoboSub</h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
-            <img src="public/pictures/RoboSub1.png"></img>
-            <img src="public/pictures/RoboSub2.png"></img>
+            <img src={RoboSub1.src}/>
+            <img src={RoboSub2.src}/>
           </div>
-          <p className="text-center text-xl w-2/5 m-10 font-giden">
+          <p className="text-center text-xl w-2/5 m-28 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamaco laboris nisi ut
@@ -56,10 +63,10 @@ const Project = () => {
         <h2 className="m-10 font-teko">Micromouse</h2>
         <div className="flex flex-col items-center">
           {/* need micromouse pics, then update image div */}
-          <div>
-            <img src="public/pictures/index4.png"></img>
+          <div className="m-10">
+            <img src={index4.src}/>
           </div>
-          <p className="text-center text-xl w-2/5 m-10 font-giden">
+          <p className="text-center text-xl w-2/5 m-28 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamaco laboris nisi ut
