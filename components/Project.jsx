@@ -5,16 +5,17 @@ import UAS1 from "../public/pictures/UAS1.png";
 import UAS2 from "../public/pictures/UAS2.png";
 import RoboSub1 from "../public/pictures/RoboSub1.png";
 import RoboSub2 from "../public/pictures/RoboSub2.png";
-import index4 from "../public/pictures/index4.png";
+import Micromouse1 from "../public/pictures/Micromouse1.png";
+import Micromouse2 from "../public/pictures/Micromouse2.png";
 
 const Project = () => {
   return (
     <div>
-      <h2 className="indent-32 m-10 font-teko">Solar Car</h2>
+      <h2 className="indent-32 m-10 font-teko text-">Solar Car</h2>
       <div className="flex flex-col items-center">
         <div className="flex flex-row space-x-6">
-          <img src={solarcar2.src}/>
-          <img src={solarcar1.src}/>
+          <img src={solarcar2.src} />
+          <img src={solarcar1.src} />
         </div>
         <p className="text-center text-xl w-2/5 m-28 font-giden">
           The University of California Riverside Solar Car team consists of many
@@ -26,11 +27,13 @@ const Project = () => {
         </p>
       </div>
       <div>
-        <h2 className="indent-48 m-10 font-teko">Unmanned Aerial Systems</h2>
+        <h2 className="indent-48 m-10 font-teko text-">
+          Unmanned Aerial Systems
+        </h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
-            <img src={UAS1.src}/>
-            <img src={UAS2.src}/>
+            <img src={UAS1.src} />
+            <img src={UAS2.src} />
           </div>
           <p className="text-center text-xl w-2/5 m-28 font-giden">
             UCR Unmanned Aerial Systems is a highly-motivated and
@@ -42,11 +45,11 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="indent-36 m-10 font-teko">RoboSub</h2>
+        <h2 className="indent-36 m-10 font-teko text-">RoboSub</h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
-            <img src={RoboSub1.src}/>
-            <img src={RoboSub2.src}/>
+            <img src={RoboSub1.src} />
+            <img src={RoboSub2.src} />
           </div>
           <p className="text-center text-xl w-2/5 m-28 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -60,11 +63,11 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="m-10 font-teko">Micromouse</h2>
+        <h2 className="m-10 font-teko text-">Micromouse</h2>
         <div className="flex flex-col items-center">
-          {/* need micromouse pics, then update image div */}
-          <div className="m-10">
-            <img src={index4.src}/>
+          <div className="flex flex-row space-x-4">
+            <img src={Micromouse1.src} />
+            <img src={Micromouse2.src} />
           </div>
           <p className="text-center text-xl w-2/5 m-28 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
