@@ -3,7 +3,7 @@ import Title from "@/components/Title";
 import JoinCards from "./JoinCards";
 const Join = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center">
       <Title title="Join IEEE@UCR" />
 
       <div className="text-center">
