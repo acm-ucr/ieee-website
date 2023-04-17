@@ -6,14 +6,14 @@ const Join = () => {
     <div className="flex flex-col justify-center items-center h-screen">
       <Title title="Join IEEE@UCR" />
 
-      <div className="max-w-2xl text-center">
+      <div className="text-center">
         <p className="text-2xl leading-12 font-medium font-giden">
           To become a student member, follow us online and show up to any
           meetings, events, or projects that interest you.
         </p>
       </div>
 
-      <div className="w-full max-w-2xl">
+      <div className="w-full">
         <img src="pictures/index4.png" className="mx-auto w-full" />
         <JoinCards />
       </div>
