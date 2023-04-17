@@ -1,62 +1,24 @@
 import React, { useState } from "react";
-import { BsDiscord, BsFillCalendarHeartFill } from "react-icons/bs";
-import { FaEnvelope, FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const JoinCard = ({ name, color, icon, link }) => {
-  const getIcon = () => {
-    switch (icon) {
-      case "discord":
-        return (
-          <BsDiscord
-            className={`text-6xl mt-3 mb-1 
-            text-${states === 0 ? color : "white"}
-            `}
-          />
-        );
-      case "email":
-        return (
-          <FaEnvelope
-            className={`text-5xl mt-3 mb-3 
-            text-${states === 0 ? color : "white"}
-            `}
-          />
-        );
-      case "link":
-        return (
-          <FaLink
-            className={`text-5xl mt-3 mb-3 
-            text-${states === 0 ? color : "white"}
-            `}
-          />
-        );
-      case "events":
-        return (
-          <BsFillCalendarHeartFill
-            className={`text-5xl mt-3 mb-3 
-            text-${states === 0 ? color : "white"}
-            `}
-          />
-        );
-    }
-  };
+const JoinCard = ({ name, text, background, border, icon, link }) => {
   const [states, setStates] = useState(0);
 
   return (
     <div
       className={` h-60 w-44 flex flex-col items-center 
-      bg-${states === 0 ? "white" : color}
+      ${states === 0 ? "bg-white" : background}
       `}
     >
-      <div className={`w-full h-5 bg-${color}`} />
-      {getIcon()}
+      <div className={`w-full h-5 ${background}`} />
+      <div className={`${states === 0 ? text : "text-white"}`}>{icon}</div>
       <p
         className={`font-teko text-4xl mb-2 
-        text-${states === 0 ? color : "white"}`}
+        ${states === 0 ? text : "text-white"}`}
       >
         {name}
       </p>
-      <div className={`w-36 h-0.5 bg-${states === 0 ? color : "white"}`} />
+      <div className={`w-36 h-0.5 ${states === 0 ? background : "bg-white"}`} />
       <motion.a
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 500 }}
@@ -66,9 +28,9 @@ const JoinCard = ({ name, color, icon, link }) => {
       >
         <button
           className={`pb-1 pt-1 w-28 font-teko mt-3 border-3 text-4xl 
-          border-${states === 0 ? color : "white"} 
-          text-${states === 0 ? color : "white"} 
-          bg-${states === 1 ? color : "white"}
+          ${states === 0 ? border : "border-white"} 
+          ${states === 0 ? text : "text-white"} 
+          ${states === 1 ? background : "bg-white"}
           `}
           onMouseEnter={() => setStates(1)}
           onMouseLeave={() => setStates(0)}
