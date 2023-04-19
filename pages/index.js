@@ -1,7 +1,14 @@
-// import { Inter } from "next/font/google";
 import React from "react";
-// const inter = Inter({ subsets: ["latin"] });
+import Landing from "@/components/Landing";
+import About from "@/components/About";
+import Join from "@/components/Join";
 
 export default function Home() {
-  return <div className="">index</div>;
+  return (
+    <div>
+      <Landing />
+      <About />
+      <Join />
+    </div>
+  );
 }
