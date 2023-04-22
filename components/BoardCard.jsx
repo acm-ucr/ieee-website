@@ -1,8 +1,6 @@
 import React from "react";
 
-const BoardCard = ({ name, position, bgColor, shadowColor }) => {
-  const textColor = "text" + bgColor.slice(2);
-
+const BoardCard = ({ name, position, bgColor, textColor, shadowColor }) => {
   return (
     <div className="col-md-auto w-25 relative my-20">
       <h1 className={`font-teko ${textColor} lg:text-5xl md:text-3xl  m-0`}>
