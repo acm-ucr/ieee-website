@@ -15,6 +15,7 @@ module.exports = {
           pinkPurple: "#BF4CA0",
           pink: "#C62368",
           black: "#001220",
+          darkblue: "#0075FF",
         },
       },
       fontFamily: {
