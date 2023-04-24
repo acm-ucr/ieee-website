@@ -17,11 +17,10 @@ const about = () => {
         src="/assets/triangle.svg"
       />
       <div className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]">
-        <Gear src={pinkGear.src}></Gear>
+        <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
       </div>
-
       <div className=" z-0 left-52 absolute bottom-48 w-[110px]">
-        <Gear src={blueGear.src}></Gear>
+        <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
       </div>
       <div className="flex w-full justify-center">
         <div className="mt-3 w-1/2 flex items-center flex-col ">

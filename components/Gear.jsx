@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function Gear({ src }) {
+function Gear({ src, isClockwise, speed }) {
+  const rotationDirection = isClockwise ? { rotate: 360 } : { rotate: -360 };
+
   return (
     <motion.div
       style={{ display: "inline-block" }}
-      animate={{ rotate: 360 }}
-      transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+      animate={rotationDirection}
+      transition={{ duration: speed, repeat: Infinity, ease: "linear" }}
     >
       <img src={src} alt="gear" />
     </motion.div>
