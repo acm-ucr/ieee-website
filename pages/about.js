@@ -1,6 +1,9 @@
 import React from "react";
 import pic from "../public/pictures/index3.jpg";
 import Title from "@/components/Title";
+import Gear from "@/components/Gear";
+import pinkGear from "../public/assets/gear-stroke-pink-blue.svg";
+import blueGear from "../public/assets/gear-lightblue.svg";
 
 const about = () => {
   return (
@@ -13,14 +16,12 @@ const about = () => {
         className="z-0 rotate-12 absolute -right-20 top-24 w-[700px] h-[800px]"
         src="/assets/triangle.svg"
       />
-      <img
-        className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]"
-        src="/assets/gear-stroke-pink-blue.svg"
-      />
-      <img
-        className=" z-0 left-52 absolute bottom-48 w-[110px]"
-        src="/assets/gear-lightblue.svg"
-      />
+      <div className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]">
+        <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
+      </div>
+      <div className=" z-0 left-52 absolute bottom-48 w-[110px]">
+        <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
+      </div>
       <div className="flex w-full justify-center">
         <div className="mt-3 w-1/2 flex items-center flex-col ">
           <Title title="Who We Are" />
