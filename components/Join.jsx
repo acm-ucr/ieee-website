@@ -12,17 +12,22 @@ const Join = () => {
           meetings, events, or projects that interest you.
         </p>
       </div>
-      <div className="w-full">
+
+      <div className="relative w-full">
         <img
-          className="z-0 absolute -right-1/3 bottom-3/5 w-[1197px] h-[1197px] "
-          src="/assets/undulate.svg "
+          className=" relative z-30 mx-auto w-full"
+          src="pictures/index4.png"
         />
-        <img
-          className="z-0 absolute -left-1/3 -top-1/8 w-[1197x] h-[1197px] "
-          src="/assets/undulate.svg "
-        />
-        <img src="pictures/index4.png" className="mx-auto w-full" />
         <JoinCards />
+        <img
+          className="absolute bottom-1/2 -right-1/2 w-full h-full z-10"
+          src="/assets/undulate.svg"
+        />
+
+        <img
+          className="absolute top-10 -left-1/2 w-full h-full z-10"
+          src="/assets/undulate.svg"
+        />
       </div>
     </div>
   );
