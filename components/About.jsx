@@ -2,32 +2,85 @@ import React from "react";
 import Title from "./Title";
 const About = () => {
   return (
-    <div>
-      <div className="flex flex-col items-center">
+    <div className="relative w-full overflow-hidden">
+      {/* background */}
+
+      <img
+        className="z-0 rotate-90 absolute right-[-1rem] top-[1rem] w-[800px] h-[800px]"
+        src="/assets/coil.svg "
+      />
+
+      <img
+        className="z-0 rotate-90 absolute right-[17rem] top-[25rem] w-[100px] h-[100px]"
+        src="/assets/gear-stroke-pink.svg"
+      />
+
+      <img
+        className="z-0 rotate-90 absolute right-[10rem] top-[30rem] w-[65px] h-[65px]"
+        src="/assets/gear-lightblue.svg"
+      />
+
+      <img
+        className="z-0 rotate-90 absolute right-[10rem] top-[40rem] w-[400px] h-[400px]"
+        src="/assets/circles1.svg"
+      />
+
+      <img
+        className="z-0 rotate-90 absolute right-[-10rem] top-[20rem] w-[300px] h-[300px]"
+        src="/assets/circles3.svg"
+      />
+
+      <img
+        className="z-10 rotate-90 absolute left-[-10rem] top-[70rem] w-[400px] h-[400px]"
+        src="/assets/circles2.svg"
+      />
+
+      <img
+        className="z-0 rotate-180 absolute left-[-10rem] top-[40rem] w-[800px] h-[800px]"
+        src="/assets/coil.svg "
+      />
+
+      <img
+        className="z-0 rotate-180 absolute left-[8rem] top-[97rem] w-[70px] h-[70px]"
+        src="/assets/gear-lightblue.svg "
+      />
+      <img
+        className="z-0 rotate-180 absolute left-[12rem] top-[95rem] w-[40px] h-[40px]"
+        src="/assets/gear-purple.svg "
+      />
+
+      <img
+        className="z-0 rotate-180 absolute left-[15rem] top-[100rem] w-[200px] h-[200px]"
+        src="/assets/circles3.svg "
+      />
+
+      {/* non-background */}
+      <div className="z-10 flex flex-col items-center my-20 mx-20">
         <Title title="About IEEE" />
-        <p className="text-center text-xl w-9/12 m-3 font-giden">
+        <p className="text-center text-3xl w-9/12 my-3 mx-60 font-giden">
           IEEE &#40;pronounced &quot;I triple E&quot;&#41; is the Institute of
           Electrical and Electronics Engineers. We are a group dedicated to
           professionalism&#44; connections&#44; and our projects&#46;
         </p>
       </div>
 
-      <img
-        src="/pictures/index2.jfif"
-        className="flex-auto w-2/3 rounded-tr-full rounded-br-full"
-      ></img>
+      <div className="z-10 rounded-tr-full rounded-br-full overflow-hidden h-[70vh] w-9/12">
+        <div className="flex relative">
+          <img src="/pictures/index2.jfif" className="w-full" />
+        </div>
+      </div>
 
       <div className="flex flex-col items-center m-40">
-        <button className="bg-ieee-pink text-6xl font-teko shadow-[10px_-8px_0px_0px] shadow-ieee-blue p-1">
+        <button className="z-10 bg-ieee-pink text-6xl font-teko shadow-[10px_-8px_0px_0px] shadow-ieee-blue p-1">
           Checkout Events
         </button>
       </div>
 
-      <div className="flex flex-row-reverse">
+      <div className="flex flex-row-reverse relative">
         <img
           src="/pictures/index1.jfif"
-          className=" w-2/3 rounded-tl-full rounded-bl-full"
-        ></img>
+          className="rounded-tl-full rounded-bl-full w-9/12"
+        />
       </div>
 
       <img src="/assets/wave.svg" className="rotate-180"></img>
