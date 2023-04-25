@@ -35,18 +35,16 @@ const Landing = () => {
         className="z-10 rotate-4 absolute left-[1300px] top-[230px] w-[77.29px] h-[77.29px]"
         src="/assets/gear-lightblue.svg"
       />
-      <div className="flex justify-center h-24 mt-20">
-        <img src="/assets/ieee-only-logo.svg"></img>
-      </div>
-      <div>
-        <h1 className="font-teko text-center mt-3">IEEE @ UCR</h1>
+      <div className="my-32 flex justify-center flex-col items-center">
+        <img src="/assets/ieee-only-logo.svg" className="w-24"></img>
+        <h1 className="font-teko text-center">IEEE @ UCR</h1>
         <h1 className="font-teko text-center">
           Institute of Electrical and Electronics Engineers
         </h1>
       </div>
       <img
         src="/assets/wave.svg"
-        className=" relative w-full overflow-hidden mt-20 "
+        className="z-50 relative w-full overflow-hidden mt-20 "
       ></img>
     </div>
   );
