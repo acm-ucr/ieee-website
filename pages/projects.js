@@ -35,11 +35,11 @@ export default function projects() {
         className="absolute z-0 scale-75 top-1/2 -left-1/2 translate-x-24 translate-y-10 rotate-90"
         src={triangle5.src}
       />
-      <img 
+      <img
         className="absolute z-0 scale-50 right-1/4 top-1/4 translate-x-32 -translate-y-32 rotate-12"
         src={lightbluegear1.src}
       />
-      <img 
+      <img
         className="absolute z-10 scale-75 bottom-1/4 -translate-y-32 -rotate-6"
         src={lightbluegear2.src}
       />
