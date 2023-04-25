@@ -12,7 +12,6 @@ import pinkbluegear1 from "../public/assets/gear-stroke-pink-blue.svg";
 import pinkbluegear2 from "../public/assets/gear-stroke-pink-blue.svg";
 
 export default function projects() {
-  // return <div className="">projects</div>;
   return (
     <div className="relative overflow-hidden">
       <img
