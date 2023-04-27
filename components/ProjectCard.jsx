@@ -13,7 +13,7 @@ const ProjectCard = ({
   linkThree,
 }) => {
   return (
-    <div className={` h-80 w-44 flex flex-col items-center0 ${colour}`}>
+    <div className={`h-80 w-44 flex flex-col items-center0 ${colour}`}>
       <div className="w-full aspect-square p-4 flex items-center justify-center">
         {logoIcon}
       </div>

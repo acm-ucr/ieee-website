@@ -7,6 +7,8 @@ import Title from "./Title";
 import Gear from "./Gear";
 import pinkGear from "../public/assets/gear-stroke-redpink.svg";
 import blueGear from "../public/assets/gear-lightblue.svg";
+import { Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 const ProjectCards = [
   {
@@ -63,30 +65,34 @@ const ProjectSection = () => {
           className="z-0 rotate-90 absolute right-[-6rem] top-[1rem] w-[800px] h-[800px]"
           src="/assets/coil.svg "
         />
-        <div className=" rotate-6 z-0 left-32 absolute top-16 w-[160px]">
+        <div className=" rotate-6 -z-10 lg:z-0 left-32 absolute top-16 w-[160px]">
           <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
         </div>
-        <div className=" z-0 left-64 absolute top-2 w-[110px]">
+        <div className="left-64 -z-10 lg:z-0 absolute top-2 w-[110px]">
           <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
         </div>
         <div className=" w-2/3 flex items-center justify-evenly z-10 mt-10">
+        <Row className="w-full items-center !mt-16">
           {ProjectCards.map((card, index) => (
-            <ProjectCard
-              key={index}
-              name={card.name}
-              colour={card.colour}
-              logoIcon={card.logoIcon}
-              linkOne={card.linkOne}
-              linkTwo={card.linkTwo}
-              textColour={card.textColour}
-              linkThree={card.linkThree}
-            />
+            <Col className="p-6" xs={12} sm={6} xl={3} key={index}>
+              <ProjectCard
+                key={index}
+                name={card.name}
+                colour={card.colour}
+                logoIcon={card.logoIcon}
+                linkOne={card.linkOne}
+                linkTwo={card.linkTwo}
+                textColour={card.textColour}
+                linkThree={card.linkThree}
+              />
+              </Col>
           ))}
+          </Row>
         </div>
 
-        <div className="flex flex-row justify-between w-full mt-32 z-20">
-          <img src="/assets/bars.svg" className="-translate-x-2"/>
-          <img src="/assets/bars.svg" className="rotate-180 translate-x-2"/>
+        <div className="flex flex-row justify-between w-full mt-32 z-20 overflow-clip">
+          <img src="/assets/bars.svg" className="-translate-x-2 "/>
+          <img src="/assets/bars.svg" className="rotate-180 translate-x-2 "/>
         </div>
         
       </div>
