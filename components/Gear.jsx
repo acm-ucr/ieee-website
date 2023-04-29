@@ -1,17 +1,9 @@
-import { useRef , useState, useEffect} from "react";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  useMotionValue,
-  useVelocity,
-  useAnimationFrame,
-} from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 function Gear({ src, isClockwise, speed }) {
   const rotationDirection = isClockwise ? { rotate: 360 } : { rotate: -360 };
-  
+
   const prevScrollY = useRef(0);
   const [goingUp, setGoingUp] = useState(false);
   const [direction, setDirection] = useState(rotationDirection);
@@ -19,7 +11,7 @@ function Gear({ src, isClockwise, speed }) {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (prevScrollY.current < currentScrollY && goingUp) {
         setGoingUp(false);
         setDirection(rotationDirection);
@@ -29,7 +21,6 @@ function Gear({ src, isClockwise, speed }) {
       }
 
       prevScrollY.current = currentScrollY;
-      //console.log(goingUp, currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -49,4 +40,3 @@ function Gear({ src, isClockwise, speed }) {
 }
 
 export default Gear;
-
