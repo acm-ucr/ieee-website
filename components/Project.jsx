@@ -13,11 +13,11 @@ const Project = () => {
     <div>
       <h2 className="indent-32 m-10 font-teko text-">Solar Car</h2>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row space-x-6">
-          <img src={solarcar2.src} />
-          <img src={solarcar1.src} />
+        <div className="flex flex-row space-x-4">
+          <img className="z-10" src={solarcar2.src} />
+          <img className="z-10" src={solarcar1.src} />
         </div>
-        <p className="text-center text-xl w-2/5 m-28 font-giden">
+        <p className="text-center text-xl w-2/5 m-36 font-giden">
           The University of California Riverside Solar Car team consists of many
           talented, undergraduate students who aim to construct a full-scaled
           solar car to compete in the Formula Sun Grand Prix, and the American
@@ -27,15 +27,15 @@ const Project = () => {
         </p>
       </div>
       <div>
-        <h2 className="indent-48 m-10 font-teko text-">
+        <h2 className="z-50 indent-48 m-10 font-teko text-">
           Unmanned Aerial Systems
         </h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
-            <img src={UAS1.src} />
+            <img className="z-10" src={UAS1.src} />
             <img src={UAS2.src} />
           </div>
-          <p className="text-center text-xl w-2/5 m-28 font-giden">
+          <p className="text-center text-xl w-2/5 m-36 font-giden">
             UCR Unmanned Aerial Systems is a highly-motivated and
             interdisciplinary group of students designing, constructing and
             programming an autonomous aerial vehicle to compete in the annual
@@ -51,7 +51,7 @@ const Project = () => {
             <img src={RoboSub1.src} />
             <img src={RoboSub2.src} />
           </div>
-          <p className="text-center text-xl w-2/5 m-28 font-giden">
+          <p className="text-center text-xl w-2/5 m-36 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamaco laboris nisi ut
@@ -63,13 +63,13 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="m-10 font-teko text-">Micromouse</h2>
+        <h2 className="indent-36 m-10 font-teko text-">Micromouse</h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
             <img src={Micromouse1.src} />
             <img src={Micromouse2.src} />
           </div>
-          <p className="text-center text-xl w-2/5 m-28 font-giden">
+          <p className="text-center text-xl w-2/5 m-36 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamaco laboris nisi ut

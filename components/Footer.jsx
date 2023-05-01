@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="border-r-4 pr-6  font-teko text-2xl ">
             <div className="mb-1">Contact us</div>
             <div className="mb-1">900 University Ave,</div>
-            <div>Riverside, CA 92501</div>
+            <div>Riverside, CA 92521</div>
           </div>
 
           <div className="h-24 pt-1 space-y-2 flex flex-col justify-between">

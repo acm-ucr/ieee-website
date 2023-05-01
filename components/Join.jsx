@@ -7,15 +7,27 @@ const Join = () => {
       <Title title="Join IEEE@UCR" />
 
       <div className="text-center">
-        <p className="text-2xl leading-12 font-medium font-giden">
+        <p className="text-xl leading-12 font-medium font-giden">
           To become a student member, follow us online and show up to any
           meetings, events, or projects that interest you.
         </p>
       </div>
 
-      <div className="w-full">
-        <img src="pictures/index4.png" className="mx-auto w-full" />
+      <div className="relative w-full">
+        <img
+          className=" relative z-30 mx-auto w-full"
+          src="pictures/index4.png"
+        />
         <JoinCards />
+        <img
+          className="absolute bottom-1/2 -right-1/2 w-full h-full z-10"
+          src="/assets/undulate.svg"
+        />
+
+        <img
+          className="absolute top-10 -left-1/2 w-full h-full z-10"
+          src="/assets/undulate.svg"
+        />
       </div>
     </div>
   );
