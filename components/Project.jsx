@@ -1,4 +1,6 @@
 import React from "react";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import solarcar2 from "../public/pictures/solarcar2.png";
 import solarcar1 from "../public/pictures/solarcar1.png";
 import UAS1 from "../public/pictures/UAS1.png";
@@ -11,13 +13,17 @@ import Micromouse2 from "../public/pictures/Micromouse2.png";
 const Project = () => {
   return (
     <div>
-      <h2 className="indent-32 m-10 font-teko text-">Solar Car</h2>
+      <h2 className="ml-12 my-10 font-teko text-">Solar Car</h2>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row space-x-4">
-          <img className="z-10" src={solarcar2.src} />
+        <Row>
+          <Col xs={12} sm={6} >
+            <img className="z-10" src={solarcar2.src} />
+          </Col>
+          <Col xs={12} sm={6} >
           <img className="z-10" src={solarcar1.src} />
-        </div>
-        <p className="text-center text-xl w-2/5 m-36 font-giden">
+          </Col>
+        </Row>
+        <p className="text-center text-base md:text-xl w-10/12 md:w-2/5 m-36 font-giden">
           The University of California Riverside Solar Car team consists of many
           talented, undergraduate students who aim to construct a full-scaled
           solar car to compete in the Formula Sun Grand Prix, and the American
@@ -27,7 +33,7 @@ const Project = () => {
         </p>
       </div>
       <div>
-        <h2 className="z-50 indent-48 m-10 font-teko text-">
+        <h2 className="z-50 ml-12 my-10t font-teko text-">
           Unmanned Aerial Systems
         </h2>
         <div className="flex flex-col items-center">
@@ -45,13 +51,13 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="indent-36 m-10 font-teko text-">RoboSub</h2>
+        <h2 className="ml-12 my-10 font-teko text-">RoboSub</h2>
         <div className="flex flex-col items-center">
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-row space-x-4 z-10">
             <img src={RoboSub1.src} />
             <img src={RoboSub2.src} />
           </div>
-          <p className="text-center text-xl w-2/5 m-36 font-giden">
+          <p className="text-center text-xl w-2/5 m-36 font-giden z-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamaco laboris nisi ut
@@ -63,7 +69,7 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="indent-36 m-10 font-teko text-">Micromouse</h2>
+        <h2 className="ml-12 my-10 font-teko text-">Micromouse</h2>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
             <img src={Micromouse1.src} />
