@@ -71,8 +71,8 @@ const ProjectSection = () => {
         <div className="left-64 -z-10 lg:z-0 absolute top-2 w-[110px]">
           <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
         </div>
-        <div className=" w-2/3 flex items-center justify-evenly z-10 mt-10">
-        <Row className="w-full items-center !mt-16">
+        <div className=" w-2/3 flex items-center justify-center z-10 mt-10">
+        <Row className="w-full items-center justify-center !mt-16 !ml-7 sm:!ml-12 xl:!ml-8">
           {ProjectCards.map((card, index) => (
             <Col className="p-6" xs={12} sm={6} xl={3} key={index}>
               <ProjectCard
