@@ -8,6 +8,7 @@ import Gear from "./Gear";
 import pinkGear from "../public/assets/gear-stroke-redpink.svg";
 import blueGear from "../public/assets/gear-lightblue.svg";
 import bars from "../public/assets/bars.svg";
+import coil from "../public/assets/coil.svg";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 
@@ -56,7 +57,7 @@ const ProjectSection = () => {
       <div className="w-full h-48 overflow-clip">
         <img
           className="absolute -left-48 -translate-y-20 h-full z-0"
-          src="/assets/coil.svg"
+          src={coil.src}
         />
       </div>
       <div className="relative pb-5 pt-5 flex flex-col items-center justify-center w-full h-full overflow">

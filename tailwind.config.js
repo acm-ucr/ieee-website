@@ -22,6 +22,9 @@ module.exports = {
         teko: "var(--teko-font)",
         giden: "var(--giden-font)",
       },
+      backgroundImage: {
+        circuitboard: "url('/assets/circuit-board.svg')",
+      },
     },
   },
   // plugins: [require("@tailwindcss/aspect-ratio")],

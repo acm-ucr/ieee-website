@@ -11,7 +11,7 @@ import Micromouse2 from "../public/pictures/Micromouse2.webp";
 const Project = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center relative">
-      <div className="w-11/12 flex flex-col items-center">
+      <div className="w-9/12 flex flex-col items-center">
         <p className="font-teko text-4xl text-left w-full ml-12">Solar Car</p>
         <div className="flex flex-row w-full justify-between">
           <img className="z-10 mr-2 w-1/2" src={solarcar2.src} />
