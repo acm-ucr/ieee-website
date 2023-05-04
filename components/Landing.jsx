@@ -5,6 +5,7 @@ import gearStrokepurple from "../public/assets/gear-stroke-purple.svg";
 import gearlightblue from "../public/assets/gear-lightblue.svg";
 import gearpinkBlue from "../public/assets/gear-stroke-pink-blue.svg";
 import wave from "../public/assets/wave.svg";
+import logo from "../public/assets/ieee-only-logo.svg";
 const Landing = () => {
   return (
     <div className="relative w-full overflow-hidden">
@@ -41,7 +42,7 @@ const Landing = () => {
         src={gearlightblue.src}
       />
       <div className="my-32 flex justify-center flex-col items-center">
-        <img src="/assets/ieee-only-logo.svg" className="w-24"></img>
+        <img src={logo.src} className="w-24"></img>
         <h1 className="font-teko text-center">IEEE @ UCR</h1>
         <h1 className="font-teko text-center">
           Institute of Electrical and Electronics Engineers
