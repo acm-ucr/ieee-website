@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import solacor from "../public/assets/solarcar.svg";
-import UAS from "../public/assets/UAS.png";
-import robosub from "../public/assets/robosub.png";
+import UAS from "../public/assets/UAS.webp";
+import robosub from "../public/assets/robosub.webp";
 import Micromouse from "../public/assets/Micromouse.svg";
 import Title from "./Title";
 import Gear from "./Gear";
@@ -51,16 +51,16 @@ const ProjectCards = [
 
 const ProjectSection = () => {
   return (
-      <div>
+    <div>
       <div className="w-full h-48 overflow-clip">
         <img
-            className="absolute -left-48 -translate-y-20 h-full z-0"
-            src="/assets/coil.svg"
-          />
+          className="absolute -left-48 -translate-y-20 h-full z-0"
+          src="/assets/coil.svg"
+        />
       </div>
       <div className="relative pb-5 pt-5 flex flex-col items-center justify-center w-full h-full overflow">
-        <Title title="Projects"/>
-        
+        <Title title="Projects" />
+
         <img
           className="z-0 rotate-90 absolute right-[-6rem] top-[1rem] w-[800px] h-[800px]"
           src="/assets/coil.svg "
@@ -72,32 +72,31 @@ const ProjectSection = () => {
           <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
         </div>
         <div className=" w-2/3 flex items-center justify-center z-10 mt-10">
-        <Row className="w-full items-center justify-center !mt-16 !ml-7 sm:!ml-12 xl:!ml-8">
-          {ProjectCards.map((card, index) => (
-            <Col className="p-6" xs={12} sm={6} xl={3} key={index}>
-              <ProjectCard
-                key={index}
-                name={card.name}
-                colour={card.colour}
-                logoIcon={card.logoIcon}
-                linkOne={card.linkOne}
-                linkTwo={card.linkTwo}
-                textColour={card.textColour}
-                linkThree={card.linkThree}
-              />
+          <Row className="w-full items-center justify-center !mt-16 !ml-7 sm:!ml-12 xl:!ml-8">
+            {ProjectCards.map((card, index) => (
+              <Col className="p-6" xs={12} sm={6} xl={3} key={index}>
+                <ProjectCard
+                  key={index}
+                  name={card.name}
+                  colour={card.colour}
+                  logoIcon={card.logoIcon}
+                  linkOne={card.linkOne}
+                  linkTwo={card.linkTwo}
+                  textColour={card.textColour}
+                  linkThree={card.linkThree}
+                />
               </Col>
-          ))}
+            ))}
           </Row>
         </div>
 
         <div className="flex flex-row justify-between w-full mt-32 z-20 overflow-clip">
-          <img src="/assets/bars.svg" className="-translate-x-2 "/>
-          <img src="/assets/bars.svg" className="rotate-180 translate-x-2 "/>
+          <img src="/assets/bars.svg" className="-translate-x-2 " />
+          <img src="/assets/bars.svg" className="rotate-180 translate-x-2 " />
         </div>
-        
       </div>
-      <div className="w-full h-20" ></div>
-      </div>
+      <div className="w-full h-20"></div>
+    </div>
   );
 };
 
