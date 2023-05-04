@@ -42,10 +42,15 @@ const cards = [
 const JoinCards = () => {
   return (
     <div className=" pb-5 pt-5 flex justify-center w-full">
-      <div className="w-2/3 md:w-11/12 lg:w-2/3 flex items-center justify-evenly ">
-        <Row>
+      <div className="w-2/3 md:w-11/12 lg:w-2/3 flex items-center justify-center">
+        <Row className="flex justify-even">
           {cards.map((card, index) => (
-            <Col key={index} sm={6} md={3} className="my-2">
+            <Col
+              key={index}
+              xs={6}
+              md={3}
+              className="my-2 flex justify-center items-center"
+            >
               <JoinCard
                 name={card.name}
                 text={card.text}

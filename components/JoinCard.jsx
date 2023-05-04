@@ -13,7 +13,7 @@ const JoinCard = ({ name, text, background, border, icon, link }) => {
       <div className={`w-full h-5 ${background}`} />
       <div className={`${states === 0 ? text : "text-white"}`}>{icon}</div>
       <p
-        className={`font-teko text-4xl mb-2 
+        className={`font-teko text-2xl md:text-3xl mb-2 
         ${states === 0 ? text : "text-white"}`}
       >
         {name}

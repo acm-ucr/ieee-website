@@ -65,7 +65,7 @@ const ProjectSection = () => {
 
         <img
           className="z-0 rotate-90 absolute right-[-6rem] top-[1rem] w-[800px] h-[800px]"
-          src="/assets/coil.svg "
+          src={coil.src}
         />
         <div className=" rotate-6 -z-10 lg:z-0 left-32 absolute top-16 w-[160px]">
           <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
