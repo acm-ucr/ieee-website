@@ -4,17 +4,18 @@ import Title from "@/components/Title";
 import Gear from "@/components/Gear";
 import pinkGear from "../public/assets/gear-stroke-pink-blue.svg";
 import blueGear from "../public/assets/gear-lightblue.svg";
+import triangle from "../public/assets/triangle.svg";
 
 const about = () => {
   return (
     <div className="mb-20 relative w-full overflow-hidden">
       <img
         className="z-0 -rotate-12 absolute -left-20 w-[600px] h-[600px]"
-        src="/assets/triangle.svg "
+        src={triangle.src}
       />
       <img
         className="z-0 rotate-12 absolute -right-20 top-24 w-[700px] h-[800px]"
-        src="/assets/triangle.svg"
+        src={triangle.src}
       />
       <div className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]">
         <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
