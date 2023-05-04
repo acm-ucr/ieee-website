@@ -2,6 +2,7 @@ import React from "react";
 import JoinCard from "@/components/JoinCard";
 import { BsDiscord, BsFillCalendarHeartFill } from "react-icons/bs";
 import { FaEnvelope, FaLink } from "react-icons/fa";
+import { Row, Col } from "react-bootstrap";
 
 const cards = [
   {
@@ -40,19 +41,22 @@ const cards = [
 
 const JoinCards = () => {
   return (
-    <div className=" pb-5 pt-5 bg-ieee-black flex justify-center w-full">
-      <div className=" w-2/3 flex items-center justify-evenly">
-        {cards.map((card, index) => (
-          <JoinCard
-            key={index}
-            name={card.name}
-            text={card.text}
-            background={card.background}
-            border={card.border}
-            icon={card.icon}
-            link={card.link}
-          />
-        ))}
+    <div className=" pb-5 pt-5 flex justify-center w-full">
+      <div className="w-2/3 md:w-11/12 lg:w-2/3 flex items-center justify-evenly ">
+        <Row>
+          {cards.map((card, index) => (
+            <Col key={index} sm={6} md={3} className="my-2">
+              <JoinCard
+                name={card.name}
+                text={card.text}
+                background={card.background}
+                border={card.border}
+                icon={card.icon}
+                link={card.link}
+              />
+            </Col>
+          ))}
+        </Row>
       </div>
     </div>
   );

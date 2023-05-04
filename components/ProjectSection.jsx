@@ -7,6 +7,7 @@ import Title from "./Title";
 import Gear from "./Gear";
 import pinkGear from "../public/assets/gear-stroke-redpink.svg";
 import blueGear from "../public/assets/gear-lightblue.svg";
+import bars from "../public/assets/bars.svg";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 
@@ -51,7 +52,7 @@ const ProjectCards = [
 
 const ProjectSection = () => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <div className="w-full h-48 overflow-clip">
         <img
           className="absolute -left-48 -translate-y-20 h-full z-0"
@@ -72,9 +73,14 @@ const ProjectSection = () => {
           <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
         </div>
         <div className=" w-2/3 flex items-center justify-center z-10 mt-10">
-          <Row className="w-full items-center justify-center !mt-16 !ml-7 sm:!ml-12 xl:!ml-8">
+          <Row className="w-full items-center justify-center">
             {ProjectCards.map((card, index) => (
-              <Col className="p-6" xs={12} sm={6} xl={3} key={index}>
+              <Col
+                className="my-2 flex justify-evenly"
+                xs={6}
+                md={3}
+                key={index}
+              >
                 <ProjectCard
                   key={index}
                   name={card.name}
@@ -91,8 +97,8 @@ const ProjectSection = () => {
         </div>
 
         <div className="flex flex-row justify-between w-full mt-32 z-20 overflow-clip">
-          <img src="/assets/bars.svg" className="-translate-x-2 " />
-          <img src="/assets/bars.svg" className="rotate-180 translate-x-2 " />
+          <img src={bars.src} className=" w-1/2" />
+          <img src={bars.src} className="rotate-180 translate-x-2 w-1/2 " />
         </div>
       </div>
       <div className="w-full h-20"></div>

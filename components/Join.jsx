@@ -2,11 +2,10 @@ import React from "react";
 import Title from "@/components/Title";
 import JoinCards from "./JoinCards";
 import undulate from "../public/assets/undulate.svg";
-import { Col } from "react-bootstrap";
-import { Row } from "react-bootstrap";
+import index4 from "../public/pictures/index4.webp";
 const Join = () => {
   return (
-    <div className="flex flex-col justify-center items-center overflow-hidden">
+    <div className="flex flex-col justify-center items-center overflow-hidden w-full relative">
       <Title title="Join IEEE@UCR" />
 
       <div className="text-center">
@@ -15,22 +14,14 @@ const Join = () => {
           meetings, events, or projects that interest you.
         </p>
       </div>
-      <Row className="w-full">
-        <Col className="my-2">
-          <img className="w-full" src="pictures/index4.png" />
-        </Col>
-      </Row>
-      <Row xl={12} md={9} sm={6} xs={3} className=" w-full justify-center">
+      <img className="w-full z-10" src={index4.src} />
+      <div className="w-full z-10">
         <JoinCards />
-      </Row>
-      <Row className="w-100">
-        <Col xs={3} md={6} xl={12} className="my-2">
-          <img className="z-10 rotate-12 absolute w-full" src={undulate.src} />
-        </Col>
-        <Col xs={3} md={6} xl={12} className="my-2">
-          <img className="z-10 -rotate-90 absolute w-full" src={undulate.src} />
-        </Col>
-      </Row>
+      </div>
+      <img
+        className="z-0 rotate-12 absolute w-1/2 -left-64 bottom-0"
+        src={undulate.src}
+      />
     </div>
   );
 };

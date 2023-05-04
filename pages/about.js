@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../public/pictures/index3.jpg";
+import pic from "../public/pictures/index3.webp";
 import Title from "@/components/Title";
 import Gear from "@/components/Gear";
 import pinkGear from "../public/assets/gear-stroke-pink-blue.svg";
@@ -27,8 +27,15 @@ const about = () => {
           <Title title="Who We Are" />
 
           <p className="w-full my-10 text-center font-giden text-xl">
-            Lorem ipsum is placeholder text commonly used in the graphic, print,
-            and publishing industries for previewing layouts and visual mockups.
+            IEEE stands for the Institute of Electrical and Electronics
+            Engineers. We&#39;re a group dedicated to professionalism,
+            connections, and our projects. Our mission as the local chapter is
+            to provide engineers with technical, social, and professional
+            development in the engineering field. We aim to be the leading
+            engineering organization on campus, providing more opportunities for
+            student improvement outside the classroom. We are committed in
+            providing engineers with career enhancement, engineering social
+            events, and growth in their respective professions.
           </p>
           <img
             className="w-full mt-10 mb-20 z-50"
