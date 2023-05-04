@@ -3,11 +3,12 @@ import ieeelogo from "../public/assets/ieee-logo.svg";
 import { BsDiscord } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { motion } from "framer-motion";
+import footer from "../public/assets/footer.svg";
 
 const Footer = () => {
   return (
     <footer className="w-full relative">
-      <img src="/assets/footer.svg" className="w-full " alt="background" />
+      <img src={footer.src} className="w-full " alt="background" />
       <div className="w-full absolute bottom-0">
         <div className="flex p-7 space-x-4">
           <div className="relative flex-grow ml-4">
