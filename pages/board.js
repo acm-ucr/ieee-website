@@ -1,12 +1,12 @@
 import React from "react";
 import BoardCard from "@/components/BoardCard";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export default function board() {
   return (
-    <Container>
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+    <div className="w-full flex justify-center">
+      <Row className="w-11/12 justify-center flex">
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Chloe Georgiou"
             position="Chair"
@@ -16,7 +16,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Laiba Hasan"
             position="Vice Chair"
@@ -25,10 +25,8 @@ export default function board() {
             shadowColor="shadow-ieee-lightblue"
           />
         </Col>
-      </Row>
 
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Harrison Cooper"
             position="Secretary/Webmaster"
@@ -38,7 +36,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Andro Zaki"
             position="Treasurer"
@@ -48,7 +46,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Connor Stewart"
             position="Professional Development"
@@ -57,10 +55,7 @@ export default function board() {
             shadowColor="shadow-ieee-pink"
           />
         </Col>
-      </Row>
-
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Nicholas Kang"
             position="Program Chair"
@@ -69,7 +64,7 @@ export default function board() {
             shadowColor="shadow-ieee-pinkPurple"
           />
         </Col>
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Alexander Hickerson"
             position="Program Chair"
@@ -78,10 +73,7 @@ export default function board() {
             shadowColor="shadow-ieee-pink"
           />
         </Col>
-      </Row>
-
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Sethya Pugal"
             position="Robotics Coordinator"
@@ -91,7 +83,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Sonny Ding"
             position="Robotics Coordinator"
@@ -100,10 +92,7 @@ export default function board() {
             shadowColor="shadow-ieee-bluePurple"
           />
         </Col>
-      </Row>
-
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Divyank Shah"
             position="Solar Car Coordinator"
@@ -113,7 +102,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Daisy Rojas Garcia"
             position="Solar Car Coordinator"
@@ -122,10 +111,7 @@ export default function board() {
             shadowColor="shadow-ieee-bluePurple"
           />
         </Col>
-      </Row>
-
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Benjamin Bravo"
             position="Fundraising Chair"
@@ -135,7 +121,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Saraí Herrerra"
             position="Fundraising Chair"
@@ -144,10 +130,7 @@ export default function board() {
             shadowColor="shadow-ieee-pinkPurple"
           />
         </Col>
-      </Row>
-
-      <Row className="m-10 justify-content-md-center">
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Anthony Villicana"
             position="Historian"
@@ -157,7 +140,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Zinal Patel"
             position="Robosub Coordinator"
@@ -167,7 +150,7 @@ export default function board() {
           />
         </Col>
 
-        <Col sm={12} md={6} xl={4}>
+        <Col sm={12} md={6} xl={3}>
           <BoardCard
             name="Sreekar Vattipalli"
             position="Graduate Student Representative"
@@ -177,6 +160,6 @@ export default function board() {
           />
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
