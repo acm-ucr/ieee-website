@@ -20,7 +20,7 @@ const Join = () => {
           <img className="w-full" src="pictures/index4.png" />
         </Col>
       </Row>
-      <Row xl={12} md={9} sm={6} xs={3} className=" w-full justify-center">
+      <Row xs={3} sm={6} md={9} xl={12} className=" w-full justify-center">
         <JoinCards />
       </Row>
       <Row className="w-100">
