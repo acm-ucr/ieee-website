@@ -95,7 +95,6 @@ const ProjectSection = () => {
           <img src={bars.src} className="rotate-180 translate-x-2 w-1/2 " />
         </div>
       </div>
-      <div className="w-full h-20"></div>
     </div>
   );
 };
