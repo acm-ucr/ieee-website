@@ -24,15 +24,19 @@ const Footer = () => {
           </div>
           <div className="h-24 pt-1 space-y-2 flex flex-col justify-evenly mr-3">
             <motion.a
+              className="no-underline text-white"
+              transition={{ type: "spring", stiffness: 500 }}
+              whileHover={{ scale: 1.2 }}
               target="_blank"
               href="https://discord.gg/Ugjp6Us"
-              className="text-white hover:opacity-70"
             >
               <BsDiscord className=" text-2xl md:text-5xl" />
             </motion.a>
             <motion.a
+              className="no-underline text-white"
+              transition={{ type: "spring", stiffness: 500 }}
+              whileHover={{ scale: 1.2 }}
               target="_blank"
-              className="text-white hover:opacity-70"
               href="https://ieeeucr.github.io/subscribe.html"
             >
               <GrMail className=" text-2xl md:text-5xl" />

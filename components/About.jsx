@@ -11,6 +11,7 @@ import circles3 from "../public/assets/circles3.svg";
 import wave from "../public/assets/wave.svg";
 import index1 from "../public/pictures/index1.webp";
 import index2 from "../public/pictures/index2.webp";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -75,9 +76,14 @@ const About = () => {
       />
 
       <div className="flex flex-col items-center m-20">
-        <button className="z-10 bg-ieee-pink text-2xl lg:text-3xl font-teko shadow-[10px_-8px_0px_0px] shadow-ieee-blue py-2 px-4">
+        <motion.a
+          className="z-10 bg-ieee-pink text-2xl lg:text-3xl font-teko shadow-[10px_-8px_0px_0px] shadow-ieee-blue py-2 px-4 no-underline text-white"
+          transition={{ type: "spring", stiffness: 500 }}
+          whileHover={{ scale: 1.2 }}
+          href="/events"
+        >
           Checkout Events
-        </button>
+        </motion.a>
       </div>
 
       <div className="z-10 relative flex flex-row-reverse">
