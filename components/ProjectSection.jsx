@@ -54,23 +54,16 @@ const ProjectCards = [
 const ProjectSection = () => {
   return (
     <div className="w-full overflow-hidden">
-      <div className="w-full h-48 overflow-clip">
-        <img
-          className="absolute -left-48 -translate-y-20 h-full z-0"
-          src={coil.src}
-        />
-      </div>
-      <div className="relative pb-5 pt-5 flex flex-col items-center justify-center w-full h-full overflow">
+      <div className="relative pb-5 pt-5 flex flex-col items-center justify-center w-full h-full overflow mt-10">
         <Title title="Projects" />
-
         <img
-          className="z-0 rotate-90 absolute right-[-6rem] top-[1rem] w-[800px] h-[800px]"
+          className="z-0 rotate-90 absolute right-0 translate-x-[30%] top-[1rem] w-1/2"
           src={coil.src}
         />
-        <div className=" rotate-6 -z-10 lg:z-0 left-32 absolute top-16 w-[160px]">
+        <div className=" z-0 left-[10%] absolute top-[10%] w-[20%]">
           <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
         </div>
-        <div className="left-64 -z-10 lg:z-0 absolute top-2 w-[110px]">
+        <div className=" z-0 left-[25%] absolute top-[6%] w-[10%]">
           <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
         </div>
         <div className=" w-2/3 flex items-center justify-center z-10 mt-10">

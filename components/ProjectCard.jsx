@@ -13,16 +13,18 @@ const ProjectCard = ({
   linkThree,
 }) => {
   return (
-    <div className={`h-80 w-44 flex flex-col items-center ${colour}`}>
+    <div className={`w-11/12 flex flex-col items-center ${colour}`}>
       <div className="w-full aspect-square p-4 flex items-center justify-center">
         {logoIcon}
       </div>
-      <div className={` w-full h-32 flex flex-col items-center bg-white`}>
-        <p className={`item-center font-teko text-4xl mb-0 mt-2 ${textColour}`}>
+      <div className={` w-full flex flex-col items-center bg-white`}>
+        <p
+          className={`item-center font-teko text-xl lg:text-3xl mb-0 mt-2 ${textColour}`}
+        >
           {name}
         </p>
 
-        <div className={`w-36 h-0.5 mb-2 ${colour}`}></div>
+        <div className={`w-full h-0.5 mb-2 ${colour}`}></div>
 
         <div className={`justify-center w-full h-12 flex flex-wrap flex-row`}>
           <motion.a
@@ -30,7 +32,7 @@ const ProjectCard = ({
             transition={{ type: "spring", stiffness: 500 }}
             href={linkOne}
           >
-            <BsDiscord className={`text-4xl m-1 ${textColour}`} />
+            <BsDiscord className={` text-xl lg:text-3xl m-1 ${textColour}`} />
           </motion.a>
 
           <motion.a
@@ -38,7 +40,7 @@ const ProjectCard = ({
             whileHover={{ scale: 1.2 }}
             href={linkTwo}
           >
-            <FaEnvelope className={`text-4xl m-1 ${textColour}`} />
+            <FaEnvelope className={` text-xl lg:text-3xl m-1 ${textColour}`} />
           </motion.a>
 
           <motion.a
@@ -46,10 +48,11 @@ const ProjectCard = ({
             whileHover={{ scale: 1.2 }}
             href={linkThree}
           >
-            <FaLink className={`text-4xl m-1 ${textColour}`} />
+            <FaLink className={` text-xl lg:text-3xl m-1 ${textColour}`} />
           </motion.a>
         </div>
       </div>
+      <div className="h-3" />
     </div>
   );
 };
