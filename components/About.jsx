@@ -16,48 +16,48 @@ const About = () => {
   return (
     <div className="relative w-full overflow-hidden">
       <img
-        className="z-0 rotate-90 absolute right-[-1rem] top-[1rem] w-[800px] h-[800px]"
+        className="z-0 rotate-90 absolute right-[-1rem] top-[1rem] w-[50%]"
         src={coil.src}
       />
 
-      <div className="z-0 rotate-90 absolute right-[17rem] top-[25rem] w-[200px] h-[200px]">
+      <div className="z-0 rotate-90 absolute right-[30%] top-[20%] w-[25%]">
         <Gear src={gearStrokePink.src} isClockwise={true} speed={7} />
       </div>
 
-      <div className="z-0 rotate-90 absolute right-[10rem] top-[30rem] w-[65px] h-[65px]">
+      <div className="z-0 rotate-90 absolute right-[10rem] top-[30rem] w-[10%]">
         <Gear src={gearLightblue.src} isClockwise={true} speed={7} />
       </div>
 
       <img
-        className="z-0 rotate-90 absolute right-[10rem] top-[40rem] w-[400px] h-[400px]"
+        className="z-0 rotate-180 absolute -translate-x-[1/4] left-0 bottom-[40%] w-1/2"
+        src={coil.src}
+      />
+
+      <img
+        className="z-0 rotate-90 absolute left-1/2 -translate-x-[50%] top-[30%] w-1/3"
         src={circles1.src}
       />
 
       <img
-        className="z-0 rotate-90 absolute right-[-10rem] top-[20rem] w-[300px] h-[300px]"
+        className="z-0 rotate-90 absolute right-0 translate-x-1/2 top-[20rem] w-1/4"
         src={circles3.src}
       />
 
       <img
-        className="z-10 rotate-90 absolute left-[-10rem] top-[70rem] w-[400px] h-[400px]"
+        className="z-10 rotate-90 absolute left-0 -translate-x-[50%] bottom-[30%] w-1/2 lg:w-1/3 "
         src={circles2.src}
       />
 
-      <img
-        className="z-0 rotate-180 absolute left-[-10rem] top-[40rem] w-[800px] h-[800px]"
-        src={coil.src}
-      />
-
-      <div className="z-0 rotate-180 absolute left-[8rem] top-[97rem] w-[100px] h-[100px]">
+      <div className="z-0 rotate-180 absolute left-[10%] bottom-[30%] w-[20%] lg:w-[10%] ">
         <Gear src={gearLightblue.src} isClockwise={true} speed={5} />
       </div>
 
-      <div className="z-0 rotate-180 absolute left-[12rem] top-[95rem] w-[80px] h-[80px]">
+      <div className="z-0 rotate-180 absolute left-[20%] bottom-[25%] w-[10%] lg:w-[5%]">
         <Gear src={gearpurple.src} isClockwise={true} speed={5} />
       </div>
 
       <img
-        className="z-0 rotate-180 absolute left-[15rem] top-[100rem] w-[200px] h-[200px]"
+        className="z-0 rotate-180 absolute left-1/3 bottom-[20%] w-1/4"
         src={circles3.src}
       />
 
@@ -74,8 +74,8 @@ const About = () => {
         className="z-10 relative rounded-tr-full rounded-br-full w-7/12"
       />
 
-      <div className="flex flex-col items-center lg:m-40 md:m-40 m-20">
-        <button className="z-10 bg-ieee-pink md:text-5xl text-3xl font-teko shadow-[10px_-8px_0px_0px] shadow-ieee-blue py-2 px-4">
+      <div className="flex flex-col items-center m-20">
+        <button className="z-10 bg-ieee-pink text-2xl lg:text-3xl font-teko shadow-[10px_-8px_0px_0px] shadow-ieee-blue py-2 px-4">
           Checkout Events
         </button>
       </div>
