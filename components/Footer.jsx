@@ -9,36 +9,33 @@ const Footer = () => {
   return (
     <footer className="w-full relative">
       <img src={footer.src} className="w-full " alt="background" />
-      <div className="w-full absolute bottom-0">
-        <div className="flex p-7 space-x-4">
-          <div className="relative flex-grow ml-4">
-            <img
-              src={ieeelogo.src}
-              className="absolute h-12 inset-x-0 bottom-2"
-              alt="IEEE Logo"
-            />
-          </div>
+      <div className="w-full absolute bottom-0 left-0 flex flex-row justify-between items-end">
+        <img
+          src={ieeelogo.src}
+          className="w-1/6 h-full mb-3 ml-3"
+          alt="IEEE Logo"
+        />
 
-          <div className="border-r-4 pr-6  font-teko text-2xl ">
+        <div className="flex flex-row mb-3 mr-6">
+          <div className="flex flex-col justify-end border-r-4 border-white font-teko text-end text-xl md:text-3xl pr-3 mr-3">
             <div className="mb-1">Contact us</div>
             <div className="mb-1">900 University Ave,</div>
             <div>Riverside, CA 92521</div>
           </div>
-
-          <div className="h-24 pt-1 space-y-2 flex flex-col justify-between">
+          <div className="h-24 pt-1 space-y-2 flex flex-col justify-evenly mr-3">
             <motion.a
               target="_blank"
               href="https://discord.gg/Ugjp6Us"
               className="text-white hover:opacity-70"
             >
-              <BsDiscord size={37} />
+              <BsDiscord className=" text-2xl md:text-5xl" />
             </motion.a>
             <motion.a
               target="_blank"
               className="text-white hover:opacity-70"
               href="https://ieeeucr.github.io/subscribe.html"
             >
-              <GrMail size={37} />
+              <GrMail className=" text-2xl md:text-5xl" />
             </motion.a>
           </div>
         </div>
