@@ -18,7 +18,7 @@ const Project = () => {
           <img className="z-10 ml-2 w-1/2" src={solarcar1.src} />
         </div>
 
-        <p className="text-justify text-xl w-3/5 my-24 font-giden">
+        <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
           The University of California Riverside Solar Car team consists of many
           talented, undergraduate students who aim to construct a full-scaled
           solar car to compete in the Formula Sun Grand Prix, and the American
@@ -33,7 +33,7 @@ const Project = () => {
           <img className="z-10 mr-2 w-1/2" src={UAS1.src} />
           <img className="z-10 ml-2 w-1/2" src={UAS2.src} />
         </div>
-        <p className="text-justify text-xl w-3/5 my-24 font-giden">
+        <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
           UCR Unmanned Aerial Systems is a highly-motivated and
           interdisciplinary group of students designing, constructing and
           programming an autonomous aerial vehicle to compete in the annual
@@ -45,7 +45,7 @@ const Project = () => {
           <img className="z-10 mr-2 w-1/2" src={RoboSub1.src} />
           <img className="z-10 ml-2 w-1/2" src={RoboSub2.src} />
         </div>
-        <p className="text-justify text-xl w-3/5 my-24 font-giden">
+        <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamaco laboris nisi ut
@@ -59,7 +59,7 @@ const Project = () => {
           <img className="z-10 mr-2 w-1/2" src={Micromouse1.src} />
           <img className="z-10 ml-2 w-1/2" src={Micromouse2.src} />
         </div>
-        <p className="text-justify text-xl w-3/5 my-24 font-giden">
+        <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamaco laboris nisi ut
