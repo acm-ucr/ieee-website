@@ -16,13 +16,13 @@ const Footer = () => {
           alt="IEEE Logo"
         />
 
-        <div className="flex flex-row mb-3 mr-6">
-          <div className="flex flex-col justify-end border-r-4 border-white font-teko text-end text-xl md:text-3xl pr-3 mr-3">
-            <div className="mb-1">Contact us</div>
-            <div className="mb-1">900 University Ave,</div>
+        <div className="flex flex-row md:mb-3 md:mr-6">
+          <div className="flex flex-col justify-end border-r-4 border-white font-teko text-end text-base md:text-3xl pr-3 mr-3">
+            <div className="">Contact us</div>
+            <div className="">900 University Ave,</div>
             <div>Riverside, CA 92521</div>
           </div>
-          <div className="h-24 pt-1 space-y-2 flex flex-col justify-evenly mr-3">
+          <div className="pt-1 space-y-2 flex flex-col justify-evenly mr-3">
             <motion.a
               className="no-underline text-white"
               transition={{ type: "spring", stiffness: 500 }}
