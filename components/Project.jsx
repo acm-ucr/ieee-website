@@ -1,12 +1,12 @@
 import React from "react";
-import solarcar2 from "../public/pictures/solarcar2.png";
-import solarcar1 from "../public/pictures/solarcar1.png";
-import UAS1 from "../public/pictures/UAS1.png";
-import UAS2 from "../public/pictures/UAS2.png";
-import RoboSub1 from "../public/pictures/RoboSub1.png";
-import RoboSub2 from "../public/pictures/RoboSub2.png";
-import Micromouse1 from "../public/pictures/Micromouse1.png";
-import Micromouse2 from "../public/pictures/Micromouse2.png";
+import solarcar2 from "../public/pictures/solarcar2.webp";
+import solarcar1 from "../public/pictures/solarcar1.webp";
+import UAS1 from "../public/pictures/UAS1.webp";
+import UAS2 from "../public/pictures/UAS2.webp";
+import RoboSub1 from "../public/pictures/RoboSub1.webp";
+import RoboSub2 from "../public/pictures/RoboSub2.webp";
+import Micromouse1 from "../public/pictures/Micromouse1.webp";
+import Micromouse2 from "../public/pictures/Micromouse2.webp";
 
 const Project = () => {
   return (
@@ -27,7 +27,9 @@ const Project = () => {
         </p>
       </div>
       <div>
-        <h2 className="z-50 indent-48 m-10 font-teko text-">Unmanned Aerial Systems</h2>
+        <h2 className="z-50 indent-48 m-10 font-teko text-">
+          Unmanned Aerial Systems
+        </h2>
         <div className="flex flex-row w-full justify-between">
           <img className="z-10 mr-2 w-1/2" src={UAS1.src} />
           <img className="z-10 ml-2 w-1/2" src={UAS2.src} />
