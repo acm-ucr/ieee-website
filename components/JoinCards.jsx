@@ -43,7 +43,7 @@ const JoinCards = () => {
   return (
     <div className=" pb-5 pt-5 flex justify-center w-full">
       <div className="w-full flex items-center justify-center">
-        <Row className="flex justify-even w-3/4 lg:w-11/12 md:w-2/3">
+        <Row className="flex justify-even w-3/4 md:w-2/3">
           {cards.map((card, index) => (
             <Col
               key={index}
