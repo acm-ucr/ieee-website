@@ -48,12 +48,7 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="indent-36 m-10 font-teko text-">RoboSub</h2>
         <div className="flex flex-col items-center">
-          <div className="flex flex-row space-x-4">
-            <img src={RoboSub1.src} />
-            <img src={RoboSub2.src} />
-          </div>
           <p className="text-center text-xl w-2/5 m-36 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
