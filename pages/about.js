@@ -10,21 +10,21 @@ const about = () => {
   return (
     <div className="mb-20 relative w-full overflow-hidden">
       <img
-        className="z-0 -rotate-12 absolute -left-20 w-[600px] h-[600px]"
+        className="z-0 -rotate-12 absolute -left-[10%] w-1/2"
         src={triangle.src}
       />
       <img
-        className="z-0 rotate-12 absolute -right-20 top-24 w-[700px] h-[800px]"
+        className="z-0 rotate-12 absolute -right-[30%] top-24 w-[2/3]"
         src={triangle.src}
       />
-      <div className=" rotate-6 z-0 left-72 absolute bottom-56 w-[160px]">
+      <div className=" rotate-6 z-0 left-[20%] absolute bottom-[35%] w-[15%]">
         <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
       </div>
-      <div className=" z-0 left-52 absolute bottom-48 w-[110px]">
+      <div className=" z-0 absolute bottom-[30%] w-[10%] left-[30%]">
         <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
       </div>
       <div className="flex w-full justify-center">
-        <div className="mt-3 w-1/2 flex items-center flex-col ">
+        <div className="mt-3 w-10/12 md:w-1/2 flex items-center flex-col z-10">
           <Title title="Who We Are" />
 
           <p className="w-full my-10 text-center font-giden text-xl">
