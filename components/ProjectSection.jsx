@@ -1,8 +1,16 @@
 import ProjectCard from "./ProjectCard";
 import solacor from "../public/assets/solarcar.svg";
-import UAS from "../public/assets/UAS.png";
-import robosub from "../public/assets/robosub.png";
+import UAS from "../public/assets/UAS.webp";
+import robosub from "../public/assets/robosub.webp";
 import Micromouse from "../public/assets/Micromouse.svg";
+import Title from "./Title";
+import Gear from "./Gear";
+import pinkGear from "../public/assets/gear-stroke-redpink.svg";
+import blueGear from "../public/assets/gear-lightblue.svg";
+import bars from "../public/assets/bars.svg";
+import coil from "../public/assets/coil.svg";
+import { Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 const ProjectCards = [
   {
@@ -45,20 +53,47 @@ const ProjectCards = [
 
 const ProjectSection = () => {
   return (
-    <div className=" pb-5 pt-5 bg-ieee-black flex justify-center w-full">
-      <div className=" w-2/3 flex items-center justify-evenly">
-        {ProjectCards.map((card, index) => (
-          <ProjectCard
-            key={index}
-            name={card.name}
-            colour={card.colour}
-            logoIcon={card.logoIcon}
-            linkOne={card.linkOne}
-            linkTwo={card.linkTwo}
-            textColour={card.textColour}
-            linkThree={card.linkThree}
-          />
-        ))}
+    <div className="w-full overflow-hidden">
+      <div className="relative pb-5 pt-5 flex flex-col items-center justify-center w-full h-full overflow mt-10">
+        <Title title="Projects" />
+        <img
+          className="z-0 rotate-90 absolute right-0 translate-x-[30%] top-[1rem] w-1/2"
+          src={coil.src}
+        />
+        <div className=" z-0 left-[10%] absolute top-[10%] w-[20%]">
+          <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
+        </div>
+        <div className=" z-0 left-[25%] absolute top-[6%] w-[10%]">
+          <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
+        </div>
+        <div className=" w-2/3 flex items-center justify-center z-10 mt-10">
+          <Row className="w-full items-center justify-center">
+            {ProjectCards.map((card, index) => (
+              <Col
+                className="my-2 flex justify-evenly"
+                xs={6}
+                md={3}
+                key={index}
+              >
+                <ProjectCard
+                  key={index}
+                  name={card.name}
+                  colour={card.colour}
+                  logoIcon={card.logoIcon}
+                  linkOne={card.linkOne}
+                  linkTwo={card.linkTwo}
+                  textColour={card.textColour}
+                  linkThree={card.linkThree}
+                />
+              </Col>
+            ))}
+          </Row>
+        </div>
+
+        <div className="flex flex-row justify-between w-full mt-32 z-20 overflow-clip">
+          <img src={bars.src} className=" w-1/2" />
+          <img src={bars.src} className="rotate-180 translate-x-2 w-1/2 " />
+        </div>
       </div>
     </div>
   );
