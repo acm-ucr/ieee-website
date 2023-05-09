@@ -14,25 +14,29 @@ const MenuItem = ({
   onMouseOver,
   onMouseOut,
 }) => (
-  <motion.div
-    href={link}
-    className="relative"
-    onClick={onClick}
-    onMouseOver={onMouseOver}
-    onMouseOut={onMouseOut}
-  >
-    <motion.div animate={{ opacity: selected | Hovered ? 1 : 0.7 }}>
-      <Link className=" no-underline text-white" href={link}>
-        {text}
-      </Link>
-    </motion.div>
-    {selected && (
+  <Nav.Item>
+    <Nav.Link eventKey={text}>
       <motion.div
-        className="absolute bg-gradient-to-r from-ieee-purple to-ieee-blue h-[2.5px] w-full"
-        layoutId="underline"
-      />
-    )}
-  </motion.div>
+        href={link}
+        className="relative"
+        onClick={onClick}
+        onMouseOver={onMouseOver}
+        onMouseOut={onMouseOut}
+      >
+        <motion.div animate={{ opacity: selected | Hovered ? 1 : 0.7 }}>
+          <Link className=" no-underline text-white" href={link}>
+            {text}
+          </Link>
+        </motion.div>
+        {selected && (
+          <motion.div
+            className="absolute bg-gradient-to-r from-ieee-purple to-ieee-blue h-[2.5px] w-full"
+            layoutId="underline"
+          />
+        )}
+      </motion.div>
+    </Nav.Link>
+  </Nav.Item>
 );
 
 const Navigation = () => {
@@ -56,7 +60,10 @@ const Navigation = () => {
           </>
         </motion.div>
       </Link>
-      <Navbar.Toggle className="!text-sm" aria-controls="navbar-nav">
+      <Navbar.Toggle
+        className="list-unstyled !text-transparent"
+        aria-controls="basic-navbar-nav"
+      >
         <FaBars className="text-white text-xl" />
       </Navbar.Toggle>
       <Navbar.Collapse
