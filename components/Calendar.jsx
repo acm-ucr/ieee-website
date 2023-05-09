@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import moment from "moment";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-// import Events from "./data/Events.js";
 import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvent.jsx";
 import { useContext } from "react";
 
-// import Event from "./Event.js";
 import Modal from "./Modal.jsx";
 import EventsContext from "./EventsContext.jsx";
 
@@ -16,7 +14,7 @@ const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
   const [modalEvent, setModalEvent] = useState(null);
   const { events } = useContext(EventsContext);
-
+  console.log(events);
   return (
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
