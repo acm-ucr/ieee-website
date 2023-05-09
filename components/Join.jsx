@@ -1,8 +1,11 @@
 import React from "react";
 import Title from "@/components/Title";
 import JoinCards from "./JoinCards";
+// import Row from "react-bootstrap";
+// import Col from "react-bootstrap";
 import undulate from "../public/assets/undulate.svg";
 import index4 from "../public/pictures/index4.webp";
+
 const Join = () => {
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden w-full relative">
@@ -14,14 +17,12 @@ const Join = () => {
           meetings, events, or projects that interest you.
         </p>
       </div>
-      <Row className="w-full">
-        <Col className="my-2">
-          <img className="w-full" src="pictures/index4.png" />
-        </Col>
-      </Row>
-      <Row xs={3} sm={6} md={9} xl={12} className=" w-full justify-center">
-        <JoinCards />
-      </div>
+      <img className="w-full z-10" src={index4.src} />
+      <JoinCards xs={3} sm={6} md={9} xl={12} />
+      <img
+        className="z-0 rotate-12 absolute w-1/2 -left-64 bottom-0"
+        src={undulate.src}
+      />
       <img
         className="z-0 rotate-12 absolute w-1/2 -left-64 bottom-0"
         src={undulate.src}
