@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 
 const MenuItem = ({
+  key,
   text,
   selected,
   Hovered,
@@ -15,8 +16,8 @@ const MenuItem = ({
   onMouseOut,
 }) => (
   <Nav.Item>
-    <Nav.Link eventKey={text}>
-      <motion.div
+    <Nav.Link eventKey={key}>
+      <div
         className="relative"
         onClick={onClick}
         onMouseOver={onMouseOver}
@@ -33,7 +34,7 @@ const MenuItem = ({
             layoutId="underline"
           />
         )}
-      </motion.div>
+      </div>
     </Nav.Link>
   </Nav.Item>
 );
@@ -74,7 +75,7 @@ const Navigation = () => {
             onMouseOver={() => setIsHovered("about")}
             onMouseOut={() => setIsHovered(0)}
             text="About"
-            key="about"
+            key={1}
             link="/about"
             selected={selected === "about"}
             onClick={() => setSelected("about")}
@@ -84,7 +85,7 @@ const Navigation = () => {
             onMouseOver={() => setIsHovered("projects")}
             onMouseOut={() => setIsHovered(0)}
             text="Projects"
-            key="projects"
+            key={2}
             link="/projects"
             selected={selected === "projects"}
             onClick={() => setSelected("projects")}
@@ -94,7 +95,7 @@ const Navigation = () => {
             onMouseOver={() => setIsHovered("events")}
             onMouseOut={() => setIsHovered(0)}
             text="Events"
-            key="events"
+            key={3}
             link="/events"
             selected={selected === "events"}
             onClick={() => setSelected("events")}
@@ -104,7 +105,7 @@ const Navigation = () => {
             onMouseOver={() => setIsHovered("board")}
             onMouseOut={() => setIsHovered("0")}
             text="Board"
-            key="board"
+            key={4}
             link="/board"
             selected={selected === "board"}
             onClick={() => setSelected("board")}
