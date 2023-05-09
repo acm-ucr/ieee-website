@@ -7,15 +7,23 @@ import RoboSub1 from "../public/pictures/RoboSub1.webp";
 import RoboSub2 from "../public/pictures/RoboSub2.webp";
 import Micromouse1 from "../public/pictures/Micromouse1.webp";
 import Micromouse2 from "../public/pictures/Micromouse2.webp";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const Project = () => {
   return (
     <div>
-      <h2 className="indent-32 m-10 font-teko text-">Solar Car</h2>
+      <h2 className="ml-10 font-teko text-">Solar Car</h2>
       <div className="flex flex-col items-center">
         <div className="flex flex-row space-x-4">
-          <img className="z-10" src={solarcar2.src} />
-          <img className="z-10" src={solarcar1.src} />
+          <Row className="z-10">
+            <Col xs={12} sm={6}>
+              <img src={solarcar2.src} />
+            </Col>
+            <Col xs={12} sm={6}>
+              <img src={solarcar1.src} />
+            </Col>
+          </Row>
         </div>
         <p className="text-center text-xl w-2/5 m-36 font-giden">
           The University of California Riverside Solar Car team consists of many
@@ -26,13 +34,19 @@ const Project = () => {
           cross-country journey.
         </p>
       </div>
-      <div>
-        <h2 className="z-50 indent-48 m-10 font-teko text-">
+      <p className="z-10 font-teko text-4xl w-full ml-12">
           Unmanned Aerial Systems
-        </h2>
-        <div className="flex flex-row w-full justify-between">
-          <img className="z-10 mr-2 w-1/2" src={UAS1.src} />
-          <img className="z-10 ml-2 w-1/2" src={UAS2.src} />
+      </p>
+      <div className="flex flex-col items-center">
+        <div className="flex flex-row w-full space-x-4">
+          <Row className="z-10">
+            <Col xs={12} sm={6}>
+              <img src={UAS1.src} />
+            </Col>
+            <Col xs={12} sm={6}>
+              <img src={UAS2.src} />
+            </Col>
+          </Row>
         </div>
         <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
           UCR Unmanned Aerial Systems is a highly-motivated and
@@ -41,10 +55,18 @@ const Project = () => {
           Association for Unmanned Vehicle Systems International Student
           Unmanned Aerial Systems Competition (AUVSI-SUAS) hosted in Maryland.
         </p>
-        <p className="font-teko text-4xl text-left w-full ml-12">RoboSub</p>
-        <div className="flex flex-row w-full justify-between">
-          <img className="z-10 mr-2 w-1/2" src={RoboSub1.src} />
-          <img className="z-10 ml-2 w-1/2" src={RoboSub2.src} />
+        <p className="font-teko text-4xl w-full ml-12">RoboSub</p>
+        <div>
+          <div className="flex flex-row w-full justify-between">
+            <Row className="z-10">
+              <Col xs={12} sm={6}>
+                <img src={RoboSub1.src} />
+              </Col>
+              <Col xs={12} sm={6}>
+                <img src={RoboSub2.src} />
+              </Col>
+            </Row>
+          </div>
         </div>
       </div>
       <div>
@@ -61,11 +83,11 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <h2 className="indent-36 m-10 font-teko text-">Micromouse</h2>
+        <p className="font-teko text-4xl text-left w-full ml-12">Micromouse</p>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
-            <img src={Micromouse1.src} />
-            <img src={Micromouse2.src} />
+            <img className="z-10" src={Micromouse1.src} />
+            <img className="z-10" src={Micromouse2.src} />
           </div>
           <p className="text-center text-xl w-2/5 m-36 font-giden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
