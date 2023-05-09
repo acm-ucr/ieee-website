@@ -21,10 +21,8 @@ const CustomToolbar = (event) => {
             {event.date.getMonth() + 1 < 10
               ? `0${event.date.getMonth() + 1}`
               : event.date.getMonth() + 1}
-            05
             <br className="m-0" />
             {event.date.getFullYear() % 100}
-            23
           </div>
           <FaArrowRight
             onClick={() => event.onNavigate("NEXT")}

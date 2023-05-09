@@ -26,7 +26,7 @@ const CalendarEvents = () => {
         <div className="mb-5 w-11/12 flex justify-center items-center">
           <div className="h-[110vh] w-full relative">
             <Calendar
-              className="font-lexend w-full m-0 p-0"
+              className="font-teko w-full m-0 p-0"
               events={events}
               localizer={mLocalizer}
               defaultView="month"
