@@ -17,7 +17,6 @@ const MenuItem = ({
   <Nav.Item>
     <Nav.Link eventKey={text}>
       <motion.div
-        href={link}
         className="relative"
         onClick={onClick}
         onMouseOver={onMouseOver}
