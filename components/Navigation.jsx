@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import MenuItem from "./MenuItems";
+import { useRouter } from "next/router";
 
 const items = [
   {
@@ -25,6 +26,8 @@ const items = [
 ];
 
 const Navigation = () => {
+  const router = useRouter()
+
   return (
     <>
     <Navbar
@@ -56,6 +59,7 @@ const Navigation = () => {
         <Nav className="text-2xl font-teko flex justify-evenly items-center pb-2">
           {items.map((item, index) => (
             <MenuItem
+              path = {router.asPath}
               text={item.name}
               link={`/${item.link}`}
               name={item.name}
@@ -64,7 +68,6 @@ const Navigation = () => {
           ))}
         </Nav>
       </Navbar.Collapse>
-      {/* <div className="mt-5 w-full h-1 bg-gradient-to-r from-ieee-purple via-ieee-pink to-ieee-blue" /> */}
     </Navbar>
     </>
   );
