@@ -2,7 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { useState } from "react";
 
-const MenuItem = ({ key, text, link }) => {
+const MenuItem = ({ key, text, link, path }) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -12,8 +12,8 @@ const MenuItem = ({ key, text, link }) => {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        <p className="opacity-70 hover:opacity-100 mb-0 text-white">{text}</p>
-        {hover && (
+        <p className={`${path == link ? "opacity-100" : "opacity-70" } hover:opacity-100 mb-0 text-white`}>{text}</p>
+        {hover || path == link && (
           <div className="bg-gradient-to-r from-ieee-purple to-ieee-blue h-[2.5px] w-full" />
         )}
         {!hover && (
