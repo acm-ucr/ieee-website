@@ -47,6 +47,7 @@ export default function projects() {
       <div className="absolute z-0 bottom-[30%] left-0 w-1/5">
         <Gear src={pinkbluegear2.src} isClockwise={false} speed={5} />
       </div>
+      <div className="w-full h-4"/>
       <Title title="Projects" />
       <div className="w-full z-10">
         <Project />
