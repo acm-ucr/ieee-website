@@ -24,7 +24,7 @@ const Landing = () => {
           alt="Responsive image"
         />
         <img
-          className="z-10 -rotate-90 absolute w-[300px] top-[250px] left-[-10rem] md:-left-[35rem] md:-top-[0rem] md:w-[1100px] md:h-[1000px]"
+          className="-z-10 -rotate-90 absolute w-[300px] top-[250px] left-[-10rem] md:-left-[35rem] md:-top-[0rem] md:w-[1100px] md:h-[1000px]"
           src={undulate.src}
         />
         <div className=" z-10 rotate-5 absolute left-0 lg:left-[-2rem] -top-[-8rem] w-[80px] md:w-[80px] lg:w-[136.5px] h-[136.5px]">
@@ -51,7 +51,7 @@ const Landing = () => {
         </h1>
       </div>
       <img
-        className="z-50 absolute top-[270px]  lg:top-[300px] lg:w-[3000px] lg:h-[500px]  mt-20 mb-40"
+        className="z-50 top-[270px] lg:top-[300px] lg:w-[3000px] lg:h-[500px]  mt-20"
         src={wave.src}
       ></img>
     </div>

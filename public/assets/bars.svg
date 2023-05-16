@@ -1,7 +1,1 @@
-<svg width="697" height="154" viewBox="0 0 697 154" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="603.125" y="109.179" width="594.125" height="16.2143" transform="rotate(-180 603.125 109.179)" fill="#BF4CA0"/>
-<rect x="518.25" y="84.8564" width="509.25" height="16.2143" transform="rotate(-180 518.25 84.8564)" fill="#A571CD"/>
-<rect x="433.375" y="60.5352" width="424.375" height="16.2143" transform="rotate(-180 433.375 60.5352)" fill="#7D91EA"/>
-<rect x="348.5" y="36.2144" width="339.5" height="16.2143" transform="rotate(-180 348.5 36.2144)" fill="#64BAFF"/>
-<rect x="688" y="133.5" width="679" height="16.2143" transform="rotate(-180 688 133.5)" fill="#C62368"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="697" height="154" fill="none" xmlns:v="https://vecta.io/nano"><path fill="#bf4ca0" d="M603.125 109.179H9V92.965h594.125z"/><path fill="#a571cd" d="M518.25 84.857H9V68.643h509.25z"/><path fill="#7d91ea" d="M433.375 60.535H9V44.321h424.375z"/><path fill="#64baff" d="M348.5 36.215H9V20h339.5z"/><path fill="#c62368" d="M688 133.5H9v-16.214h679z"/></svg>

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  relative: false,
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -21,6 +22,9 @@ module.exports = {
       fontFamily: {
         teko: "var(--teko-font)",
         giden: "var(--giden-font)",
+      },
+      backgroundImage: {
+        circuitboard: "url('/assets/circuit-board.svg')",
       },
     },
   },
