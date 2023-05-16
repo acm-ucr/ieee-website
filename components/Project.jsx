@@ -35,7 +35,7 @@ const Project = () => {
         </p>
       </div>
       <p className="z-10 font-teko text-4xl w-full ml-12">
-          Unmanned Aerial Systems
+        Unmanned Aerial Systems
       </p>
       <div className="flex flex-col items-center">
         <div className="flex flex-row w-full space-x-4">
