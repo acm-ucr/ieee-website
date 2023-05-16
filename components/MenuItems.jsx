@@ -16,9 +16,7 @@ const MenuItem = ({ key, text, link }) => {
         {hover && (
           <div className="bg-gradient-to-r from-ieee-purple to-ieee-blue h-[2.5px] w-full" />
         )}
-        {!hover && (
-          <div className="h-[2.5px] w-full" />
-        )}
+        {!hover && <div className="h-[2.5px] w-full" />}
       </div>
     </Nav.Link>
   );

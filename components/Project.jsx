@@ -13,9 +13,15 @@ const Project = () => {
     <div className="w-full flex flex-col justify-center items-center relative">
       <div className="w-9/12 flex flex-col items-center">
         <p className="font-teko text-4xl text-left w-full ml-12">Solar Car</p>
-        <div className="flex flex-row w-full justify-between">
-          <img className="z-10 mr-2 w-1/2" src={solarcar2.src} />
-          <img className="z-10 ml-2 w-1/2" src={solarcar1.src} />
+        <div className="flex lg:flex-row md:flex-row flex-col flex-w-full justify-between">
+          <img
+            className="z-10 lg:mr-2 md:mr-2 m-2 lg:w-1/2 md:w-1/2 "
+            src={solarcar2.src}
+          />
+          <img
+            className="z-10 lg:ml-2 md:ml-2 m-2 lg:w-1/2 md:w-1/2 "
+            src={solarcar1.src}
+          />
         </div>
 
         <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
