@@ -34,7 +34,7 @@ const cards = [
     text: "text-ieee-pinkPurple",
     background: "bg-ieee-pinkPurple",
     border: "border-ieee-pinkPurple",
-    link: "https://ieeeucr.github.io/calendar.html",
+    link: "https://ieeeucr.github.io/events.html",
     icon: <BsFillCalendarHeartFill className="text-6xl mt-3 mb-1" />,
   },
 ];
