@@ -14,7 +14,6 @@ const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {
   const [modalEvent, setModalEvent] = useState(null);
   const { events } = useContext(EventsContext);
-  console.log(events);
   return (
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
