@@ -18,9 +18,7 @@ const giden = Gideon_Roman({
 });
 export default function App({ Component, pageProps }) {
   return (
-    <div
-      className={`w-screen overflow-hidden ${teko.variable} ${giden.variable}`}
-    >
+    <div className={`w-screen ${teko.variable} ${giden.variable}`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

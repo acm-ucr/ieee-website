@@ -62,7 +62,7 @@ const About = () => {
         src={circles3.src}
       />
 
-      <div className="z-10 relative flex flex-col items-center my-20 lg:mx-20 md:mx-20 mx-1">
+      <div className="z-10 relative flex flex-col items-center lg:mx-20 md:mx-20 mx-1">
         <Title title="About IEEE" />
         <p className="text-center lg:text-xl text-base w-9/12 my-3 mx-60 font-giden">
           IEEE &#40;pronounced &quot;I triple E&quot;&#41; is the Institute of
