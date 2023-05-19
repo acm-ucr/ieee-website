@@ -12,7 +12,7 @@ const Project = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center relative">
       <div className="w-9/12 flex flex-col items-center">
-        <p className="font-teko text-4xl text-left w-full ml-12">Solar Car</p>
+        <p className="mt-6 font-teko text-4xl text-center w-full">Solar Car</p>
         <div className="flex flex-row w-full justify-between">
           <img className="z-10 mr-2 w-1/2" src={solarcar2.src} />
           <img className="z-10 ml-2 w-1/2" src={solarcar1.src} />
@@ -26,7 +26,7 @@ const Project = () => {
           teams and their solar-powered vehicles to finish a 2,000 mile
           cross-country journey.
         </p>
-        <p className="font-teko text-4xl text-left w-full ml-12">
+        <p className="font-teko text-4xl text-center w-full">
           Unmanned Aerial Systems
         </p>
         <div className="flex flex-row w-full justify-between">
@@ -40,7 +40,7 @@ const Project = () => {
           Association for Unmanned Vehicle Systems International Student
           Unmanned Aerial Systems Competition (AUVSI-SUAS) hosted in Maryland.
         </p>
-        <p className="font-teko text-4xl text-left w-full ml-12">RoboSub</p>
+        <p className="font-teko text-4xl text-center w-full">RoboSub</p>
         <div className="flex flex-row w-full justify-between">
           <img className="z-10 mr-2 w-1/2" src={RoboSub1.src} />
           <img className="z-10 ml-2 w-1/2" src={RoboSub2.src} />
@@ -54,7 +54,7 @@ const Project = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <p className="font-teko text-4xl text-left w-full ml-12">Micromouse</p>
+        <p className="font-teko text-4xl text-center w-full">Micromouse</p>
         <div className="flex flex-row w-full justify-between">
           <img className="z-10 mr-2 w-1/2" src={Micromouse1.src} />
           <img className="z-10 ml-2 w-1/2" src={Micromouse2.src} />
