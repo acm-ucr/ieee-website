@@ -8,6 +8,7 @@ import { useContext } from "react";
 
 import Modal from "./Modal.jsx";
 import EventsContext from "./EventsContext.jsx";
+import Title from "./Title.jsx";
 
 const mLocalizer = momentLocalizer(moment);
 
@@ -18,13 +19,11 @@ const CalendarEvents = () => {
   return (
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
-        <p className="text-center font-lexend flex justify-center text-heading m-0 pt-4">
-          Calendar of Events
-        </p>
-        <div className="mb-5 w-11/12 flex justify-center items-center">
-          <div className="h-[110vh] w-full relative">
+        <Title title="Events" />
+        <div className="mt-10 mb-5 w-10/12 flex justify-center items-center">
+          <div className="h-[130vh] w-full relative">
             <Calendar
-              className="font-teko w-full m-0 p-0"
+              className=" font-teko w-full m-0 p-0 text-4xl"
               events={events}
               localizer={mLocalizer}
               defaultView="month"
@@ -40,8 +39,8 @@ const CalendarEvents = () => {
                 const bg =
                   new Date(event).toLocaleDateString() ==
                   new Date().toLocaleDateString()
-                    ? "!bg-ieee-blue"
-                    : "!bg-white";
+                    ? "!bg-opacity-20 !bg-white"
+                    : "!bg-transparent";
                 return {
                   className: `${bg}`,
                   style: {

@@ -8,16 +8,16 @@ import Filters from "./Filters.jsx";
 const CustomToolbar = (event) => {
   return (
     <div className="flex justify-center items-center">
-      <Row className=" w-full">
+      <Row className="w-full">
         <Col
           xs={4}
-          className=" w-full flex justify-start items-center text-5xl font-teko"
+          className="p-0 m-0 flex justify-start items-center text-6xl font-teko"
         >
           <FaArrowLeft
             onClick={() => event.onNavigate("PREV")}
             className="hover:text-ieee-pink hover:cursor-pointer"
           />
-          <div className="text-center text-6xl p-1">
+          <div className="text-center text-7xl p-1">
             {event.date.getMonth() + 1 < 10
               ? `0${event.date.getMonth() + 1}`
               : event.date.getMonth() + 1}
@@ -29,11 +29,11 @@ const CustomToolbar = (event) => {
             className="hover:text-ieee-pink hover:cursor-pointer"
           />
         </Col>
-        <Col xs={8} className=" w-full flex justify-end items-center m-0 p-0">
-          <Row className="w-full  m-0 p-0 flex justify-end items-center ">
+        <Col xs={8} className="px-2 w-full flex justify-end items-end m-0 pb-4">
+          <Row className="w-full m-0 p-0 flex justify-evenly justify-items-center items-center ">
             {Filters.map((filter, index) => {
               return (
-                <Col key={index} xs={5} sm={5} lg={2} className="p-1">
+                <Col key={index} xs={5} sm={5} lg={2} className="">
                   <Filter topic={filter.topic} color={filter.color} />
                 </Col>
               );

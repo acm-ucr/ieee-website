@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }) {
   return (
     <EventsContext.Provider value={{ events }}>
       <div
-        className={`w-screen overflow-hidden ${teko.variable} ${giden.variable}`}
+        className={` w-screen overflow-hidden ${teko.variable} ${giden.variable}`}
       >
         <Layout>
           <Component {...pageProps} />
