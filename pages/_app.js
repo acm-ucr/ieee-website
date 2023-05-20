@@ -20,7 +20,7 @@ const giden = Gideon_Roman({
   subsets: ["latin"],
 });
 export default function App({ Component, pageProps }) {
-  const [events, setEvents] = useState([], {});
+  const [events, setEvents] = useState([]);
   useEffect(() => {
     axios
       .get(

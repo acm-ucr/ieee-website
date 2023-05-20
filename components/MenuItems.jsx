@@ -2,7 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { useState } from "react";
 
-const MenuItem = ({ key, text, link, path }) => {
+const MenuItem = ({ index, text, link, path }) => {
   const [hover, setHover] = useState(false);
 
   return (
