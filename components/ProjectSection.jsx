@@ -60,13 +60,13 @@ const ProjectSection = () => {
           className="z-0 rotate-90 absolute right-0 translate-x-[30%] top-[1rem] w-1/2"
           src={coil.src}
         />
-        <div className=" z-0 left-[10%] absolute top-[10%] w-[20%]">
+        <div className="z-0 left-[10%] absolute top-[10%] w-[20%]">
           <Gear src={pinkGear.src} isClockwise={0} speed={7}></Gear>
         </div>
-        <div className=" z-0 left-[25%] absolute top-[6%] w-[10%]">
+        <div className="z-0 left-[25%] absolute top-[6%] w-[10%]">
           <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
         </div>
-        <div className=" w-2/3 flex items-center justify-center z-10 mt-10">
+        <div className="w-5/6 flex items-center justify-center z-10 mt-10">
           <Row className="w-full items-center justify-center">
             {ProjectCards.map((card, index) => (
               <Col
