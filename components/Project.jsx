@@ -12,18 +12,18 @@ import { Col } from "react-bootstrap";
 
 const Project = () => {
   return (
-    <div>
-      <h2 className="ml-10 font-teko text-">Solar Car</h2>
-      <div className="flex flex-col items-center">
-        <div className="flex flex-row space-x-4">
-          <Row className="z-10">
-            <Col xs={12} sm={6}>
-              <img src={solarcar2.src} />
-            </Col>
-            <Col xs={12} sm={6}>
-              <img src={solarcar1.src} />
-            </Col>
-          </Row>
+    <div className="w-full flex flex-col justify-center items-center relative">
+      <div className="w-9/12 flex flex-col items-center">
+        <p className="font-teko text-4xl text-left w-full ml-12">Solar Car</p>
+        <div className="flex lg:flex-row md:flex-row flex-col flex-w-full justify-between">
+          <img
+            className="z-10 lg:mr-2 md:mr-2 m-2 lg:w-1/2 md:w-1/2 "
+            src={solarcar2.src}
+          />
+          <img
+            className="z-10 lg:ml-2 md:ml-2 m-2 lg:w-1/2 md:w-1/2 "
+            src={solarcar1.src}
+          />
         </div>
         <p className="text-center text-xl w-2/5 m-36 font-giden">
           The University of California Riverside Solar Car team consists of many
