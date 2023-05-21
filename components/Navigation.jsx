@@ -63,6 +63,7 @@ const Navigation = () => {
                 link={`/${item.link}`}
                 name={item.name}
                 key={index}
+                index={index}
               />
             ))}
           </Nav>
