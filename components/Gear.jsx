@@ -31,7 +31,7 @@ function Gear({ src, isClockwise, speed }) {
         ease: "linear",
       }}
     >
-      <img src={src} alt="gear" />
+      <img src={src} alt="gear" className="w-full" />
     </motion.div>
   );
 }
