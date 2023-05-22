@@ -11,13 +11,13 @@ const CustomToolbar = (event) => {
       <Row className="w-full">
         <Col
           xs={4}
-          className="p-0 m-0 flex justify-start items-center text-6xl font-teko"
+          className="p-0 m-0 flex justify-start items-center text-3xl font-teko"
         >
           <FaArrowLeft
             onClick={() => event.onNavigate("PREV")}
             className="hover:text-ieee-pink hover:cursor-pointer"
           />
-          <div className="text-center text-7xl p-1">
+          <div className="text-center text-4xl p-1">
             {event.date.getMonth() + 1 < 10
               ? `0${event.date.getMonth() + 1}`
               : event.date.getMonth() + 1}

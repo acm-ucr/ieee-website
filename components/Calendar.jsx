@@ -18,12 +18,13 @@ const CalendarEvents = () => {
   console.log(events);
   return (
     events && (
-      <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
+      <section className="w-full flex justify-center items-center flex-col mt-[12vh] text-xl">
         <Title title="Events" />
-        <div className="mt-10 mb-5 w-10/12 flex justify-center items-center">
-          <div className="h-[130vh] w-full relative">
+        <div className="w-10/12 flex justify-center items-center text-xl">
+          <div className="h-[160vh] w-full relative text-xl">
             <Calendar
-              className={`font-teko w-full m-0 p-0 text-4xl `}
+              className={`font-teko w-full m-0 p-0 text-2xl `}
+              showAllEvents={true}
               events={events}
               localizer={mLocalizer}
               defaultView="month"
