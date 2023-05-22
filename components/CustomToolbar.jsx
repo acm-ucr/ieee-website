@@ -33,7 +33,7 @@ const CustomToolbar = (event) => {
           <Row className="w-full m-0 p-0 flex justify-evenly justify-items-center items-center ">
             {Filters.map((filter, index) => {
               return (
-                <Col key={index} xs={5} sm={5} lg={2} className="">
+                <Col key={index} xs={5} sm={5} lg={2} className="m-0 p-0">
                   <Filter topic={filter.topic} color={filter.color} />
                 </Col>
               );

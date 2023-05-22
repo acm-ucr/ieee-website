@@ -3,7 +3,7 @@ import React from "react";
 const Filter = ({ topic, color }) => {
   return (
     <div
-      className={` w-36 ${color} whitespace-nowrap p-1 text-center text-3xl cursor-text h-full rounded-sm flex justify-center font-teko text-white`}
+      className={`w-full ${color} whitespace-nowrap p-1 text-center text-xl rounded-sm flex justify-center font-teko text-white`}
     >
       {topic}
     </div>
