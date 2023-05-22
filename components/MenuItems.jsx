@@ -6,7 +6,7 @@ const MenuItem = ({ index, text, link, path }) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <Nav.Link as={Link} href={link} eventKey={key}>
+    <Nav.Link as={Link} href={link} eventKey={index}>
       <div
         className="w-fit"
         onMouseEnter={() => setHover(true)}

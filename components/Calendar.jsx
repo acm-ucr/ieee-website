@@ -23,7 +23,7 @@ const CalendarEvents = () => {
         <div className="mt-10 mb-5 w-10/12 flex justify-center items-center">
           <div className="h-[130vh] w-full relative">
             <Calendar
-              className=" font-teko w-full m-0 p-0 text-4xl"
+              className={`font-teko w-full m-0 p-0 text-4xl `}
               events={events}
               localizer={mLocalizer}
               defaultView="month"
@@ -33,7 +33,9 @@ const CalendarEvents = () => {
                 toolbar: CustomToolbar,
               }}
               eventPropGetter={(event) => {
-                return { className: `${event.color}` };
+                return {
+                  className: `!${event.color} p-0 !active:ring-0 !focus:outline-0`,
+                };
               }}
               dayPropGetter={(event) => {
                 const bg =

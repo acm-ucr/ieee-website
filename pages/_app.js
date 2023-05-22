@@ -20,15 +20,78 @@ const giden = Gideon_Roman({
   subsets: ["latin"],
 });
 export default function App({ Component, pageProps }) {
+  console.log(new Date().toISOString);
   const [events, setEvents] = useState([]);
   useEffect(() => {
+    const eventList = [];
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}`
+        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&timeMin=2023-10-08T21:58:44.000Z`
       )
       .then((result) => {
-        setEvents(result.data.items);
+        result.data.items.map((event) => {
+          const startHour = new Date(event.start?.dateTime).getHours();
+          const endHour = new Date(event.end?.dateTime).getHours();
+          const color = event.summary?.includes("General Meeting")
+            ? "bg-ieee-pink"
+            : event.summary?.includes("SolarCar")
+            ? "bg-ieee-pinkPurple"
+            : event.summary?.includes("UAS")
+            ? "bg-ieee-purple"
+            : event.summary?.includes("Robosub")
+            ? "bg-ieee-bluePurple"
+            : event.summary?.includes("MicroMouse")
+            ? "bg-ieee-blue"
+            : "bg-ieee-lightblue";
+          if (event.recurrence[0].split("FREQ=")[1].split(";")[0] == "WEEKLY") {
+            const recDay = event.recurrence[0].split("BYDAY=")[1];
+            let day;
+            switch (recDay) {
+              case "MO":
+                day = 1;
+                break;
+              case "TU":
+                day = 2;
+                break;
+              case "WE":
+                day = 3;
+                break;
+              case "TH":
+                day = 4;
+                break;
+              case "FR":
+                day = 5;
+                break;
+              case "SA":
+                day = 6;
+                break;
+              case "SU":
+                day = 0;
+                break;
+            }
+            const d = new Date();
+            d.setDate(d.getDate() - d.getDay() + day);
+            for (let i = -10; i <= 10; i++) {
+              const addDay = new Date();
+              addDay.setDate(d.getDate() + 7 * i);
+              const start = new Date(addDay);
+              start.setHours(startHour);
+              start.setMinutes(0);
+              const end = new Date(addDay);
+              end.setHours(endHour);
+              end.setMinutes(0);
+              eventList.push({
+                ...event,
+                start: start,
+                end: end,
+                color: color,
+              });
+            }
+          }
+        });
       });
+    // console.log(eventList);
+    setEvents(eventList);
   }, []);
 
   return (
