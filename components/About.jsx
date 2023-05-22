@@ -93,7 +93,7 @@ const About = () => {
         />
       </div>
 
-      <img src={wave.src} className="rotate-180"></img>
+      <img src={wave.src} className="rotate-180 w-full" />
     </div>
   );
 };

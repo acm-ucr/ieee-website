@@ -90,14 +90,13 @@ export default function App({ Component, pageProps }) {
           }
         });
       });
-    // console.log(eventList);
     setEvents(eventList);
   }, []);
 
   return (
     <EventsContext.Provider value={{ events }}>
       <div
-        className={` w-screen overflow-hidden ${teko.variable} ${giden.variable}`}
+        className={`w-full overflow-clip ${teko.variable} ${giden.variable}`}
       >
         <Layout>
           <Component {...pageProps} />
