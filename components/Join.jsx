@@ -8,11 +8,11 @@ import index4 from "../public/pictures/index4.webp";
 
 const Join = () => {
   return (
-    <div className="flex flex-col justify-center items-center overflow-hidden w-full relative">
+    <div className="flex flex-col items-center overflow-hidden w-full relative pt-3">
       <Title title="Join IEEE@UCR" />
 
-      <div className="text-center">
-        <p className="font-medium font-giden text-sm md:text-md lg:text-lg xl:text-xl">
+      <div className="w-full flex justify-center mb-10">
+        <p className="font-medium font-giden text-sm md:text-md lg:text-lg xl:text-xl text-center w-9/12">
           To become a student member, follow us online and show up to any
           meetings, events, or projects that interest you.
         </p>

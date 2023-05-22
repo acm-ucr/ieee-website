@@ -20,15 +20,15 @@ export default function projects() {
         src={triangle1.src}
       />
       <img
-        className="absolute z-0 scale-75 -right-1/3 translate-x-20 -translate-y-1/3 rotate-12"
+        className="absolute z-0 scale-75  right-0 translate-x-1/2 -translate-y-1/3 rotate-12"
         src={triangle2.src}
       />
       <img
-        className="absolute z-0 scale-75 -left-1/3 translate-y-56 -rotate-12"
+        className="absolute z-0 w-2/3 left-0 -translate-x-[20%] top-[30%] -rotate-12"
         src={triangle3.src}
       />
       <img
-        className="absolute z-0 scale-75 top-1/2 -right-1/2 translate-x-8 -translate-y-72 rotate-45"
+        className="absolute z-0 scale-75 top-1/2 right-0 translate-x-[50%] rotate-45"
         src={triangle4.src}
       />
       <img
@@ -38,15 +38,16 @@ export default function projects() {
       <div className="absolute z-0 scale-50 right-1/4 top-1/4 translate-x-32 -translate-y-32 rotate-12">
         <Gear src={lightbluegear1.src} isClockwise={true} speed={5} />
       </div>
-      <div className="absolute z-10 scale-75 bottom-1/4 -translate-y-32 -rotate-6">
+      <div className="absolute w-1/3 z-0 bottom-1/4">
         <Gear src={lightbluegear2.src} isClockwise={false} speed={5} />
       </div>
-      <div className="absolute z-0 right-1/4 top-1/4 translate-x-72 -translate-y-60 rotate-6">
+      <div className="absolute z-0 right-0 top-1/4 translate-x-[50%]  w-1/2">
         <Gear src={pinkbluegear1.src} isClockwise={false} speed={5} />
       </div>
-      <div className="absolute z-0 bottom-1/4 translate-x-28 -translate-y-72">
+      <div className="absolute z-0 bottom-[30%] left-0 w-1/5">
         <Gear src={pinkbluegear2.src} isClockwise={false} speed={5} />
       </div>
+      <div className="w-full h-4" />
       <Title title="Projects" />
       <div className="w-full z-10">
         <Project />

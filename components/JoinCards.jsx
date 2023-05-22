@@ -22,7 +22,7 @@ const cards = [
     icon: <FaEnvelope className="text-6xl mt-3 mb-1" />,
   },
   {
-    name: "Highlander Link",
+    name: "Highlander",
     text: "text-ieee-blue",
     background: "bg-ieee-blue",
     border: "border-ieee-blue",
@@ -34,7 +34,7 @@ const cards = [
     text: "text-ieee-pinkPurple",
     background: "bg-ieee-pinkPurple",
     border: "border-ieee-pinkPurple",
-    link: "https://ieeeucr.github.io/calendar.html",
+    link: "https://ieeeucr.github.io/events.html",
     icon: <BsFillCalendarHeartFill className="text-6xl mt-3 mb-1" />,
   },
 ];
@@ -42,14 +42,14 @@ const cards = [
 const JoinCards = () => {
   return (
     <div className=" pb-5 pt-5 flex justify-center w-full">
-      <div className="w-2/3 md:w-11/12 lg:w-2/3 flex items-center justify-center">
-        <Row className="flex justify-even">
+      <div className="w-full flex items-center justify-center">
+        <Row className="flex justify-even xs:w-5/6 sm:w-3/4 md:w-4/5">
           {cards.map((card, index) => (
             <Col
               key={index}
               xs={6}
               md={3}
-              className="my-2 flex justify-center items-center"
+              className="my-3 flex justify-center items-center"
             >
               <JoinCard
                 name={card.name}
