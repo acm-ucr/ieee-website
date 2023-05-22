@@ -18,7 +18,7 @@ const Join = () => {
         </p>
       </div>
       <img className="w-full z-10" src={index4.src} />
-      <JoinCards xs={3} sm={6} md={9} xl={12} />
+      <JoinCards xs={3} sm={6} md={9} />
       <img
         className="z-0 rotate-12 absolute w-1/2 -left-64 bottom-0"
         src={undulate.src}
