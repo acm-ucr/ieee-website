@@ -14,7 +14,7 @@ const about = () => {
         src={triangle.src}
       />
       <img
-        className="z-0 rotate-12 absolute -right-[30%] top-24 w-[2/3]"
+        className="z-0 rotate-12 absolute -right-[15%] top-24 w-2/3"
         src={triangle.src}
       />
       <div className=" rotate-6 z-0 left-[20%] absolute bottom-[35%] w-[15%]">
@@ -23,8 +23,8 @@ const about = () => {
       <div className=" z-0 absolute bottom-[30%] w-[10%] left-[30%]">
         <Gear src={blueGear.src} isClockwise={1} speed={5}></Gear>
       </div>
-      <div className="flex w-full justify-center">
-        <div className="mt-3 w-10/12 md:w-1/2 flex items-center flex-col z-10">
+      <div className="flex w-full justify-center ">
+        <div className="mt-3 w-10/12 md:w-1/2 flex items-center flex-col z-10 ">
           <Title title="Who We Are" />
 
           <p className="w-full my-10 text-center font-giden text-xl">
