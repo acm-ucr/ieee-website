@@ -21,7 +21,7 @@ function Gear({ src, isClockwise, speed }) {
     } else if (scrollVelocity.get() > 0) {
       setDirection(1);
     }
-    moveBy += (scrollVelocity.get() * (delta / 1000) * speed) / 10;
+    moveBy += (scrollVelocity.get() * (delta / 1000)) / 10;
     base.set(base.get() + moveBy);
   });
   return (
