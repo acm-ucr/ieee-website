@@ -14,7 +14,9 @@ const Project = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center relative">
       <div className="w-9/12 flex flex-col items-center">
-        <p className="font-teko text-4xl text-left w-full ml-12">Solar Car</p>
+        <p className="font-teko text-4xl text-left w-full ml-12 flex justify-center">
+          Solar Car
+        </p>
         <div className="flex lg:flex-row md:flex-row flex-col flex-w-full justify-between">
           <img
             className="z-10 lg:mr-2 md:mr-2 m-2 lg:w-1/2 md:w-1/2 "
@@ -34,19 +36,21 @@ const Project = () => {
           cross-country journey.
         </p>
       </div>
-      <p className="z-10 font-teko text-4xl w-full ml-12">
+      <p className="z-10 font-teko text-4xl w-full ml-12 flex justify-center">
         Unmanned Aerial Systems
       </p>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row w-full space-x-4">
-          <Row className="z-10">
-            <Col xs={12} sm={6}>
-              <img src={UAS1.src} />
-            </Col>
-            <Col xs={12} sm={6}>
-              <img src={UAS2.src} />
-            </Col>
-          </Row>
+        <div>
+          <div className="flex flex-row w-full justify-between items-center">
+            <Row className="z-10">
+              <Col xs={12} sm={6}>
+                <img src={UAS1.src} />
+              </Col>
+              <Col xs={12} sm={6}>
+                <img src={UAS2.src} />
+              </Col>
+            </Row>
+          </div>
         </div>
         <p className="text-center text-xl w-11/12 md:w-3/5 my-24 font-giden">
           UCR Unmanned Aerial Systems is a highly-motivated and
@@ -55,9 +59,11 @@ const Project = () => {
           Association for Unmanned Vehicle Systems International Student
           Unmanned Aerial Systems Competition (AUVSI-SUAS) hosted in Maryland.
         </p>
-        <p className="font-teko text-4xl w-full ml-12">RoboSub</p>
+        <p className="font-teko text-4xl w-full ml-12 flex justify-center">
+          RoboSub
+        </p>
         <div>
-          <div className="flex flex-row w-full justify-between">
+          <div className="flex flex-row w-full justify-between items-center">
             <Row className="z-10">
               <Col xs={12} sm={6}>
                 <img src={RoboSub1.src} />
@@ -83,7 +89,9 @@ const Project = () => {
         </div>
       </div>
       <div>
-        <p className="font-teko text-4xl text-left w-full ml-12">Micromouse</p>
+        <p className="font-teko text-4xl text-left w-full ml-12 flex justify-center">
+          Micromouse
+        </p>
         <div className="flex flex-col items-center">
           <div className="flex flex-row space-x-4">
             <img className="z-10" src={Micromouse1.src} />
