@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className="relative z-0">
         <img
-          className="absolute left-0 -translate-y-[50%] w-1/2 z-0"
+          className="absolute left-0 -translate-y-[50%] w-1/3 z-0"
           src={coil.src}
         />
       </div>

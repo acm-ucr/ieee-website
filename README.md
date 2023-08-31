@@ -10,9 +10,8 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 ## Figma
+
 [UCR IEEE Official Website Figma Design File](https://www.figma.com/file/JU4pglkup3pS32lDQ6cOzc/IEEE?type=design&mode=design&t=WU6yx2XpUb1H05aO-1)
-
-
 
 ## Node.js
 

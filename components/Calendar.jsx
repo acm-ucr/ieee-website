@@ -20,10 +20,10 @@ const CalendarEvents = () => {
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[2vh] text-xl">
         <Title title="Events" />
-        <div className="w-10/12 flex justify-center items-center text-xl">
+        <div className="w-10/12 flex justify-center items-center text-xl my-5">
           <div className="h-[100vh] w-full relative text-xl">
             <Calendar
-              className={`font-teko w-full m-0 p-0 text-2xl `}
+              className={`font-teko w-full m-0 p-0 text-lg md:text-2xl `}
               showAllEvents={true}
               events={events}
               localizer={mLocalizer}

@@ -17,10 +17,10 @@ const Footer = () => {
         />
 
         <div className="flex flex-row md:mb-3 md:mr-6">
-          <div className="flex flex-col justify-end border-r-4 border-white font-teko text-end text-base md:text-3xl pr-3 mr-3">
-            <div className="">Contact us</div>
-            <div className="">900 University Ave,</div>
-            <div>Riverside, CA 92521</div>
+          <div className="flex flex-col justify-end border-r-4 border-white font-teko text-end pr-3 mr-3">
+            <div className="text-sm md:text-3xl">Contact us</div>
+            <div className="text-sm md:text-3xl">900 University Ave,</div>
+            <div className="text-sm md:text-3xl">Riverside, CA 92521</div>
           </div>
           <div className="pt-1 space-y-2 flex flex-col justify-evenly mr-3">
             <motion.a
