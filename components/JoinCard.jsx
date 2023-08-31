@@ -6,7 +6,7 @@ const JoinCard = ({ name, text, background, border, icon, link }) => {
 
   return (
     <div
-      className={`  flex flex-col items-center w-11/12
+      className={`  flex flex-col items-center w-11/12 duration-500
       ${states === 0 ? "bg-white" : background}
       `}
     >
