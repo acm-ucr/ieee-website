@@ -20,7 +20,6 @@ const giden = Gideon_Roman({
   subsets: ["latin"],
 });
 export default function App({ Component, pageProps }) {
-  console.log(new Date().toISOString);
   const [events, setEvents] = useState([]);
   useEffect(() => {
     const eventList = [];
