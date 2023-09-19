@@ -1,9 +1,9 @@
 import ProjectCard from "./ProjectCard";
-import Title from "./Title";
-import bars from "../public/assets/bars.svg";
-import { Col } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { projects } from "./data/projects";
+import Title from "../Title";
+import bars from "../../public/assets/bars.svg";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import { projects } from "../../data/projects";
 const ProjectSection = () => {
   return (
     <div className="w-full overflow-hidden">
@@ -14,6 +14,7 @@ const ProjectSection = () => {
             <Col className="m-0 p-0" xs={6} md={3} key={index}>
               <ProjectCard
                 key={index}
+                index={index}
                 name={project.title}
                 color={project.color}
                 logoIcon={project.logo}

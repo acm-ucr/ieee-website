@@ -1,6 +1,6 @@
-import micromouse1 from "../../public/pictures/micromouse/micromouse1.png";
-import micromouse2 from "../../public/pictures/micromouse/micromouse2.png";
-import micromouse3 from "../../public/pictures/micromouse/micromouse3.png";
+import micromouse1 from "../public/pictures/micromouse/micromouse1.webp";
+import micromouse2 from "../public/pictures/micromouse/micromouse2.webp";
+import micromouse3 from "../public/pictures/micromouse/micromouse3.webp";
 export const micromousePage = [
   {
     type: "title",

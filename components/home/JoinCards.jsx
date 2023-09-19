@@ -1,7 +1,8 @@
 import React from "react";
-import JoinCard from "@/components/JoinCard";
-import { Row, Col } from "react-bootstrap";
-import { cards } from "./data/join";
+import JoinCard from "./JoinCard";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { cards } from "@/data/join";
 
 const JoinCards = () => {
   return (
@@ -21,6 +22,7 @@ const JoinCards = () => {
               border={card.border}
               icon={card.icon}
               link={card.link}
+              index={index}
             />
           </Col>
         ))}

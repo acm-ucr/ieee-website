@@ -2,8 +2,7 @@ import React from "react";
 import Filter from "./Filter.jsx";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Filters from "./Filters.jsx";
-
+import Filters from "@/data/filters.js";
 const CustomToolbar = (event) => {
   return (
     <div className="flex justify-center items-center">

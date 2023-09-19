@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const JoinCard = ({ name, text, background, border, icon, link }) => {
+const JoinCard = ({ name, text, background, border, icon, link, index }) => {
   const [states, setStates] = useState(0);
 
   return (
-    <div
+    <motion.div
+      initial={{ y: -30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, type: "teew", delay: 0.3 * index }}
       className={`py-3 flex flex-col items-center w-11/12 duration-500 my-1
       ${states === 0 ? "bg-white" : background}
       `}
@@ -39,7 +42,7 @@ const JoinCard = ({ name, text, background, border, icon, link }) => {
           Join
         </button>
       </motion.a>
-    </div>
+    </motion.div>
   );
 };
 

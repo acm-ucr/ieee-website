@@ -2,13 +2,11 @@ import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion";
 
 const MenuItem = ({
   index,
   text,
   selected,
-  Hovered,
   onClick,
   link,
   onMouseOver,
@@ -34,12 +32,11 @@ const MenuItem = ({
         >
           {text}
         </p>
-        {selected && (
-          <motion.div
-            className="absolute bg-gradient-to-r from-ieee-purple to-ieee-blue h-[2.5px] w-full"
-            layoutId="underline"
-          />
-        )}
+        <div
+          className={`${
+            selected ? "opacity-100" : "opacity-0"
+          } duration-300 bg-gradient-to-r from-ieee-purple to-ieee-blue h-[2.5px] w-full`}
+        />
       </div>
     </Nav.Link>
   );

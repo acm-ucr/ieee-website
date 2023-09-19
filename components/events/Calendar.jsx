@@ -5,8 +5,8 @@ import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvent.jsx";
-
 import Modal from "./Modal.jsx";
+
 const recDayMap = { MO: 1, TU: 2, WE: 3, TH: 4, FR: 5, SA: 6, SU: 0 };
 const mLocalizer = momentLocalizer(moment);
 const CalendarEvents = () => {

@@ -1,15 +1,15 @@
-import solarcar2 from "../../public/pictures/solarcar/solarcar2.png";
-import solarcar3 from "../../public/pictures/solarcar/solarcar3.png";
-import uas1 from "../../public/pictures/uas/uas1.png";
-import uas2 from "../../public/pictures/uas/uas2.png";
-import robosub1 from "../../public/pictures/robosub/robosub1.png";
-import robosub2 from "../../public/pictures/robosub/robosub2.png";
-import micromouse1 from "../../public/pictures/micromouse/micromouse1.png";
-import micromouse2 from "../../public/pictures/micromouse/micromouse3.png";
-import UAS from "../../public/assets/UAS.webp";
-import solacor from "../../public/assets/solarcar.svg";
-import robosub from "../../public/assets/robosub.webp";
-import Micromouse from "../../public/assets/Micromouse.svg";
+import solarcar2 from "../public/pictures/solarcar/solarcar2.webp";
+import solarcar3 from "../public/pictures/solarcar/solarcar3.webp";
+import uas1 from "../public/pictures/uas/uas1.webp";
+import uas2 from "../public/pictures/uas/uas2.webp";
+import robosub1 from "../public/pictures/robosub/robosub1.webp";
+import robosub2 from "../public/pictures/robosub/robosub2.webp";
+import micromouse1 from "../public/pictures/micromouse/micromouse1.webp";
+import micromouse2 from "../public/pictures/micromouse/micromouse3.webp";
+import UAS from "../public/pictures/uas/UAS.webp";
+import solacor from "../public/pictures/solarcar/solarcar.svg";
+import robosub from "../public/pictures/robosub/robosub.webp";
+import Micromouse from "../public/pictures/micromouse/Micromouse.svg";
 export const projects = [
   {
     title: "Solar Car",

@@ -1,10 +1,10 @@
-import solarcar1 from "../../public/pictures/solarcar/solarcar1.png";
-import solarcar2 from "../../public/pictures/solarcar/solarcar2.png";
-import solarcar3 from "../../public/pictures/solarcar/solarcar3.png";
-import solarcar4 from "../../public/pictures/solarcar/solarcar4.png";
-import solarcar5 from "../../public/pictures/solarcar/solarcar5.png";
-import solarcar6 from "../../public/pictures/solarcar/solarcar6.png";
-import solarcar7 from "../../public/pictures/solarcar/solarcar7.png";
+import solarcar1 from "../public/pictures/solarcar/solarcar1.webp";
+import solarcar2 from "../public/pictures/solarcar/solarcar2.webp";
+import solarcar3 from "../public/pictures/solarcar/solarcar3.webp";
+import solarcar4 from "../public/pictures/solarcar/solarcar4.webp";
+import solarcar5 from "../public/pictures/solarcar/solarcar5.webp";
+import solarcar6 from "../public/pictures/solarcar/solarcar6.webp";
+import solarcar7 from "../public/pictures/solarcar/solarcar7.webp";
 export const solarcarPage = [
   {
     type: "title",

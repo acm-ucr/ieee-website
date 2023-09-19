@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "./Title";
+import Title from "../Title";
 import Text from "./Text";
 import Picture from "./Picture";
 import { Row } from "react-bootstrap";

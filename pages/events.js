@@ -1,5 +1,5 @@
 import React from "react";
-import Calendar from "../components/Calendar";
+import Calendar from "../components/events/Calendar";
 import Title from "@/components/Title";
 export default function events() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "@/components/Title";
 import JoinCards from "./JoinCards";
-import index4 from "../public/pictures/index4.webp";
+import index4 from "../../public/pictures/ieee/index4.webp";
 
 const Join = () => {
   return (

@@ -1,11 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { colors } from "./data/colors";
-import { icons } from "./data/icons";
+import { colors } from "../../data/colors";
+import { icons } from "../../data/icons";
 
-const ProjectCard = ({ name, color, logoIcon, links, detail }) => {
+const ProjectCard = ({ name, color, logoIcon, links, detail, index }) => {
   return (
-    <div className="w-11/12 flex flex-col items-center bg-white my-1">
+    <motion.div
+      initial={{ y: -30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, type: "teew", delay: 0.3 * index }}
+      className="w-11/12 flex flex-col items-center bg-white my-1"
+    >
       <div
         className={`w-full aspect-square p-4 flex items-center justify-center ${colors[color].bg}`}
       >
@@ -29,14 +34,16 @@ const ProjectCard = ({ name, color, logoIcon, links, detail }) => {
           </motion.a>
         ))}
       </div>
-      <a
-        className={`px-4 border-2 font-teko no-underline m-3 text-3xl ${colors[color].text} ${colors[color].border}`}
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 500 }}
+        className={`px-4 border-2 font-teko no-underline m-3 text-3xl hover:opacity-80 ${colors[color].text} ${colors[color].border}`}
         href={`/projects/${detail}`}
       >
         Details
-      </a>
+      </motion.a>
       <div className={`h-3 w-full ${colors[color].bg}`} />
-    </div>
+    </motion.div>
   );
 };
 

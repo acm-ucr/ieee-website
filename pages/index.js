@@ -1,8 +1,8 @@
 import React from "react";
-import Landing from "@/components/Landing";
-import About from "@/components/About";
-import Join from "@/components/Join";
-import ProjectSection from "@/components/ProjectSection";
+import Landing from "@/components/home/Landing";
+import About from "@/components/home/About";
+import Join from "@/components/home/Join";
+import ProjectSection from "@/components/home/ProjectSection";
 
 export default function Home() {
   return (

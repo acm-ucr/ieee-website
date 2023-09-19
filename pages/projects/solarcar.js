@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectPage from "@/components/ProjectPage";
-import { solarcarPage } from "@/components/data/solarcar";
+import ProjectPage from "@/components/projects/ProjectPage";
+import { solarcarPage } from "@/data/solarcar";
 const solarcar = () => {
   return <ProjectPage contents={solarcarPage} />;
 };

@@ -1,5 +1,5 @@
-import robosub1 from "../../public/pictures/robosub/robosub1.png";
-import robosub2 from "../../public/pictures/robosub/robosub2.png";
+import robosub1 from "../public/pictures/robosub/robosub1.webp";
+import robosub2 from "../public/pictures/robosub/robosub2.webp";
 export const robosubPage = [
   {
     type: "title",

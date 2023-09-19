@@ -1,11 +1,12 @@
 import React from "react";
-import gearStroke from "../public/assets/gear-stroke-pink-blue.svg";
-import gearLightBlue from "../public/assets/gear-lightblue.svg";
-import gearBlue from "../public/assets/gear-blue.svg";
+import gearStroke from "../../public/assets/gear-stroke-pink-blue.svg";
+import gearLightBlue from "../../public/assets/gear-lightblue.svg";
+import gearBlue from "../../public/assets/gear-blue.svg";
 import Gear from "@/components/Gear";
-import gearStrokePurple from "../public/assets/gear-stroke-purple.svg";
-import ieeeLogo from "../public/assets/ieee-only-logo.svg";
-import wave from "../public/assets/wave.svg";
+import gearStrokePurple from "../../public/assets/gear-stroke-purple.svg";
+import ieeeLogo from "../../public/assets/ieee-only-logo.svg";
+import wave from "../../public/assets/wave.svg";
+import { motion } from "framer-motion";
 
 const Landing = () => {
   return (
@@ -45,11 +46,29 @@ const Landing = () => {
         isClockwise={1}
         speed={5}
       />
-      <img src={ieeeLogo.src} className="w-16 md:w-24 mt-32 md:mt-40 mb-2" />
-      <p className="text-3xl md:text-5xl mb-1 md:mb-2">IEEE @ UCR</p>
-      <p className="text-center text-2xl md:text-4xl mb-16 md:mb-40">
+      <motion.img
+        src={ieeeLogo.src}
+        initial={{ y: -30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, type: "teew" }}
+        className="w-16 md:w-24 mt-32 md:mt-40 mb-2"
+      />
+      <motion.p
+        initial={{ y: -30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, type: "teew", delay: 0.3 }}
+        className="text-3xl md:text-5xl mb-1 md:mb-2"
+      >
+        IEEE @ UCR
+      </motion.p>
+      <motion.p
+        initial={{ y: -30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, type: "teew", delay: 0.6 }}
+        className="text-center text-2xl md:text-4xl mb-16 md:mb-40"
+      >
         Institute of Electrical and Electronics Engineers
-      </p>
+      </motion.p>
       <img className="z-50 w-full justify-self-end" src={wave.src} />
     </div>
   );
