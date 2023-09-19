@@ -18,6 +18,7 @@ const ProjectSection = () => {
                 color={project.color}
                 logoIcon={project.logo}
                 links={project.links}
+                detail={project.detail}
               />
             </Col>
           ))}

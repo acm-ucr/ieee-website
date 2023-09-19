@@ -31,7 +31,7 @@ const Navigation = () => {
   return (
     <>
       <Navbar
-        className="flex justify-between bg-[url('/assets/circuit-board.svg')] bg-ieee-black m-0 p-0"
+        className="flex justify-between backdrop-blur-md pb-1 m-0 p-0"
         collapseOnSelect
         expand="md"
         fixed="top"
@@ -59,27 +59,24 @@ const Navigation = () => {
         >
           <FaBars className="text-white text-xl" />
         </Navbar.Toggle>
-        <div className="flex flex-row w-full justify-end ">
-          <Navbar.Collapse className="w-full items-center md:justify-end justify-center">
-            <Nav className="text-2xl font-teko flex justify-evenly items-center">
-              {items.map((item, index) => (
-                <MenuItem
-                  text={item.name}
-                  link={`/${item.link}`}
-                  name={item.name}
-                  key={index}
-                  index={index}
-                  onMouseOver={() => setIsHovered(item.name)}
-                  onMouseOut={() => setIsHovered(0)}
-                  selected={selected == item.name}
-                  onClick={() => setSelected(item.name)}
-                  Hovered={isHovered === item.name}
-                />
-              ))}
-            </Nav>
-          </Navbar.Collapse>
-        </div>
-        <div className=" w-full h-1 bg-gradient-to-r from-ieee-purple via-ieee-pink to-ieee-blue m-0" />
+        <Navbar.Collapse className="w-full h-full items-center md:justify-end justify-center">
+          <Nav className="text-2xl font-teko flex justify-evenly items-center">
+            {items.map((item, index) => (
+              <MenuItem
+                text={item.name}
+                link={`/${item.link}`}
+                name={item.name}
+                key={index}
+                index={index}
+                onMouseOver={() => setIsHovered(item.name)}
+                onMouseOut={() => setIsHovered(0)}
+                selected={selected == item.name}
+                onClick={() => setSelected(item.name)}
+                Hovered={isHovered === item.name}
+              />
+            ))}
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </>
   );

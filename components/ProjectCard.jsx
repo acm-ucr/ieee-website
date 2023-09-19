@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { colors } from "./data/colors";
 import { icons } from "./data/icons";
 
-const ProjectCard = ({ name, color, logoIcon, links }) => {
+const ProjectCard = ({ name, color, logoIcon, links, detail }) => {
   return (
     <div className="w-11/12 flex flex-col items-center bg-white my-1">
       <div
@@ -29,6 +29,12 @@ const ProjectCard = ({ name, color, logoIcon, links }) => {
           </motion.a>
         ))}
       </div>
+      <a
+        className={`px-4 border-2 font-teko no-underline m-3 text-3xl ${colors[color].text} ${colors[color].border}`}
+        href={`/projects/${detail}`}
+      >
+        Details
+      </a>
       <div className={`h-3 w-full ${colors[color].bg}`} />
     </div>
   );
