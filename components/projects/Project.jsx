@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { projects } from "@/data/projects";
+import { projects } from "@/components/data/projects";
 import { motion } from "framer-motion";
 const Project = () => {
   return (

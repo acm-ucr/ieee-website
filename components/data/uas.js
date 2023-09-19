@@ -1,6 +1,6 @@
-import uas1 from "../public/pictures/uas/uas1.webp";
-import uas2 from "../public/pictures/uas/uas2.webp";
-import uas3 from "../public/pictures/uas/uas3.webp";
+import uas1 from "../../public/pictures/uas/uas1.webp";
+import uas2 from "../../public/pictures/uas/uas2.webp";
+import uas3 from "../../public/pictures/uas/uas3.webp";
 export const uasPage = [
   {
     type: "title",

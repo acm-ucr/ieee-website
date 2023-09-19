@@ -3,7 +3,7 @@ import Title from "../Title";
 import bars from "../../public/assets/bars.svg";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { projects } from "../../data/projects";
+import { projects } from "../data/projects";
 const ProjectSection = () => {
   return (
     <div className="w-full overflow-hidden">
