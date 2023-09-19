@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { icons } from "@/data/icons";
 
-const JoinCard = ({ name, text, background, border, icon, link, index }) => {
+const JoinCard = ({ name, text, background, border, link, index }) => {
   const [states, setStates] = useState(0);
-
+  console.log(text.toLowerCase());
   return (
     <motion.div
       initial={{ y: -30, opacity: 0 }}
@@ -13,7 +14,9 @@ const JoinCard = ({ name, text, background, border, icon, link, index }) => {
       ${states === 0 ? "bg-white" : background}
       `}
     >
-      <div className={`${states === 0 ? text : "text-white"}`}>{icon}</div>
+      <div className={`${states === 0 ? text : "text-white"} text-6xl`}>
+        {icons[name.toLowerCase()]}
+      </div>
       <p
         className={`font-teko text-xl md:text-2xl mb-2 
         ${states === 0 ? text : "text-white"}`}

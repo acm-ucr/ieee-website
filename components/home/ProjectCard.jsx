@@ -1,9 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { colors } from "../../data/colors";
 import { icons } from "../../data/icons";
 
-const ProjectCard = ({ name, color, logoIcon, links, detail, index }) => {
+const ProjectCard = ({
+  name,
+  textColor,
+  bgColor,
+  borderColor,
+  logoIcon,
+  links,
+  detail,
+  index,
+}) => {
   return (
     <motion.div
       initial={{ y: -30, opacity: 0 }}
@@ -12,12 +20,12 @@ const ProjectCard = ({ name, color, logoIcon, links, detail, index }) => {
       className="w-11/12 flex flex-col items-center bg-white my-1"
     >
       <div
-        className={`w-full aspect-square p-4 flex items-center justify-center ${colors[color].bg}`}
+        className={`w-full aspect-square p-4 flex items-center justify-center ${bgColor}`}
       >
         {logoIcon}
       </div>
       <p
-        className={`w-10/12 text-center whitespace-nowrap font-teko text-xl lg:text-3xl pt-2 pb-1 m-0 border-b-[2px] ${colors[color].text} ${colors[color].border}`}
+        className={`w-10/12 text-center whitespace-nowrap font-teko text-xl lg:text-3xl pt-2 pb-1 m-0 border-b-[2px] ${textColor} ${borderColor}`}
       >
         {name}
       </p>
@@ -28,7 +36,7 @@ const ProjectCard = ({ name, color, logoIcon, links, detail, index }) => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400 }}
             href={link}
-            className={`text-base lg:text-3xl m-1 hover:opacity-80 ${colors[color].text}`}
+            className={`text-base lg:text-3xl m-1 hover:opacity-80 ${textColor}`}
           >
             {icons[key]}
           </motion.a>
@@ -37,12 +45,12 @@ const ProjectCard = ({ name, color, logoIcon, links, detail, index }) => {
       <motion.a
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 500 }}
-        className={`px-4 border-2 font-teko no-underline m-3 text-3xl hover:opacity-80 ${colors[color].text} ${colors[color].border}`}
+        className={`px-4 border-2 font-teko no-underline m-3 text-3xl hover:opacity-80 ${textColor} ${borderColor}`}
         href={`/projects/${detail}`}
       >
         Details
       </motion.a>
-      <div className={`h-3 w-full ${colors[color].bg}`} />
+      <div className={`h-3 w-full ${bgColor}`} />
     </motion.div>
   );
 };
