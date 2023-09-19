@@ -1,58 +1,35 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLink } from "react-icons/fa";
-import { BsDiscord } from "react-icons/bs";
+import { colors } from "./data/colors";
+import { icons } from "./data/icons";
 
-const ProjectCard = ({
-  name,
-  colour,
-  textColour,
-  logoIcon,
-  linkOne,
-  linkTwo,
-  linkThree,
-}) => {
+const ProjectCard = ({ name, color, logoIcon, links }) => {
   return (
-    <div className={`w-11/12 flex flex-col items-center ${colour}`}>
-      <div className="w-full aspect-square p-4 flex items-center justify-center">
+    <div className="w-11/12 flex flex-col items-center bg-white my-1">
+      <div
+        className={`w-full aspect-square p-4 flex items-center justify-center ${colors[color].bg}`}
+      >
         {logoIcon}
       </div>
-      <div className={` w-full flex flex-col items-center bg-white`}>
-        <p
-          className={`item-center font-teko text-xl lg:text-3xl mb-0 mt-2 ${textColour}`}
-        >
-          {name}
-        </p>
-
-        <div className={`w-full h-0.5 mb-2 ${colour}`}></div>
-
-        <div className={`justify-center w-full h-12 flex flex-wrap flex-row`}>
+      <p
+        className={`w-10/12 text-center whitespace-nowrap font-teko text-xl lg:text-3xl pt-2 pb-1 m-0 border-b-[2px] ${colors[color].text} ${colors[color].border}`}
+      >
+        {name}
+      </p>
+      <div className="justify-evenly w-full flex m-1">
+        {Object.entries(links).map(([key, link], index) => (
           <motion.a
-            whileHover={{ scale: 1.2 }}
-            transition={{ type: "spring", stiffness: 500 }}
-            href={linkOne}
+            key={index}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400 }}
+            href={link}
+            className={`text-base lg:text-3xl m-1 hover:opacity-80 ${colors[color].text}`}
           >
-            <BsDiscord className={` text-xl lg:text-3xl m-1 ${textColour}`} />
+            {icons[key]}
           </motion.a>
-
-          <motion.a
-            transition={{ type: "spring", stiffness: 500 }}
-            whileHover={{ scale: 1.2 }}
-            href={linkTwo}
-          >
-            <FaEnvelope className={` text-xl lg:text-3xl m-1 ${textColour}`} />
-          </motion.a>
-
-          <motion.a
-            transition={{ type: "spring", stiffness: 500 }}
-            whileHover={{ scale: 1.2 }}
-            href={linkThree}
-          >
-            <FaLink className={` text-xl lg:text-3xl m-1 ${textColour}`} />
-          </motion.a>
-        </div>
+        ))}
       </div>
-      <div className="h-3" />
+      <div className={`h-3 w-full ${colors[color].bg}`} />
     </div>
   );
 };
