@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectPage from "@/components/projects/ProjectPage";
-import { micromousePage } from "@/data/micromouse";
+import { micromousePage } from "@/components/data/micromouse";
 const micromouse = () => {
   return <ProjectPage contents={micromousePage} />;
 };

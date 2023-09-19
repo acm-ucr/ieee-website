@@ -2,7 +2,7 @@ import React from "react";
 import ieeelogo from "../public/assets/ieee-logo.svg";
 import { motion } from "framer-motion";
 import footer from "../public/assets/footer.svg";
-import { icons } from "../data/icons";
+import { icons } from "./data/icons";
 
 const Footer = () => {
   return (

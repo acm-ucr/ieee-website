@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { icons } from "@/data/icons";
+import { icons } from "@/components/data/icons";
 
 const JoinCard = ({ name, text, background, border, link, index }) => {
   const [states, setStates] = useState(0);

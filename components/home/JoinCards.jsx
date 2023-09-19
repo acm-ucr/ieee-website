@@ -2,7 +2,7 @@ import React from "react";
 import JoinCard from "./JoinCard";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { cards } from "@/data/join";
+import { cards } from "@/components/data/join";
 
 const JoinCards = () => {
   return (
