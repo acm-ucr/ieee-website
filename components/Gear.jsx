@@ -6,7 +6,7 @@ import {
   useAnimationFrame,
   useTransform,
 } from "framer-motion";
-function Gear({ src, isClockwise, speed }) {
+function Gear({ src, speed, className }) {
   const [direction, setDirection] = useState(1);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -26,6 +26,7 @@ function Gear({ src, isClockwise, speed }) {
   });
   return (
     <motion.div
+      className={className}
       style={{ rotate }}
       transition={{
         ease: "linear",
