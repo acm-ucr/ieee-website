@@ -1,11 +1,13 @@
 import React from "react";
-import BoardCard from "@/components/BoardCard";
+import BoardCard from "@/components/boards/BoardCard";
 import { Row, Col } from "react-bootstrap";
-import { colors, boards } from "@/components/data/boards";
+import { colors, boards } from "@/data/boards";
+import Title from "@/components/Title";
 
 export default function board() {
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex flex-col items-center justify-center my-16">
+      <Title title="Meet The Board" />
       <Row className="w-11/12 justify-center flex">
         {boards.map((board, index) => (
           <Col key={index} sm={12} md={6} xl={3}>

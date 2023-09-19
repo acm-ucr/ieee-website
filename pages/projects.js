@@ -1,14 +1,12 @@
 import React from "react";
-import Project from "@/components/Project";
+import Project from "@/components/projects/Project";
 import Title from "@/components/Title";
 
 export default function projects() {
   return (
-    <>
+    <div className="w-full flex flex-col items-center justify-center py-16">
       <Title title="Projects" />
-      <div className="w-full z-10 flex items-center justify-center">
-        <Project />
-      </div>
-    </>
+      <Project />
+    </div>
   );
 }

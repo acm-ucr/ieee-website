@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
-import MenuItem from "./MenuItems";
+import MenuItem from "./events/MenuItems";
 import { useState } from "react";
 import logo from "../public/assets/ieee-only-logo-blue.svg";
 
