@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import MenuItem from "./MenuItems";
 import { useState } from "react";
+import logo from "../public/assets/ieee-only-logo-blue.svg";
 
 const items = [
   {
@@ -44,10 +45,7 @@ const Navigation = () => {
           >
             <div className="mt-1 mb-2 ml-2 flex justify-center items-center font-teko text-white text-5xl">
               <>
-                <img
-                  src="assets/ieee-only-logo-blue.svg"
-                  className="w-10 mr-2"
-                />
+                <img src={logo.src} className="w-10 mr-2" />
                 <p className="text-white mb-0">IEEE</p>
               </>
             </div>
