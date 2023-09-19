@@ -10,7 +10,7 @@ export const cards = [
     icon: <BsDiscord className="text-6xl mt-3 mb-1" />,
   },
   {
-    name: "Email Us",
+    name: "Email",
     text: "text-ieee-purple",
     background: "bg-ieee-purple",
     border: "border-ieee-purple",

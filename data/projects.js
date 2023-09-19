@@ -15,6 +15,9 @@ export const projects = [
     title: "Solar Car",
     detail: "solarcar",
     color: "bluePurple",
+    textColor: "text-ieee-bluePurple hover:text-ieee-bluePurple",
+    bgColor: "bg-ieee-bluePurple",
+    borderColor: "border-ieee-bluePurple",
     logo: <img src={solacor.src} alt="solar car" />,
     links: {
       instagram: "https://www.instagram.com/ucrsolarcar/",
@@ -30,6 +33,9 @@ export const projects = [
     title: "UAS",
     detail: "uas",
     color: "pinkPurple",
+    textColor: "text-ieee-pinkPurple hover:text-ieee-pinkPurple",
+    bgColor: "bg-ieee-pinkPurple",
+    borderColor: "border-ieee-pinkPurple",
     logo: <img src={UAS.src} alt="UAS" />,
     links: {
       website: "https://ucr-uas.weebly.com",
@@ -45,6 +51,9 @@ export const projects = [
   {
     title: "RoboSub",
     color: "darkblue",
+    textColor: "text-ieee-darkblue hover:text-ieee-darkblue",
+    bgColor: "bg-ieee-darkblue",
+    borderColor: "border-ieee-darkblue",
     detail: "robosub",
     logo: <img src={robosub.src} alt="robosub" />,
     links: {
@@ -61,6 +70,9 @@ export const projects = [
     title: "Micromouse",
     detail: "micromouse",
     color: "pink",
+    textColor: "text-ieee-pink hover:text-ieee-pink",
+    bgColor: "bg-ieee-pink",
+    borderColor: "border-ieee-pink",
     logo: <img src={Micromouse.src} alt="micromouse" />,
     links: { email: "robotics@ieeeucr.org" },
     img1: micromouse1.src,
