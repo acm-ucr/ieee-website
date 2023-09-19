@@ -5,6 +5,7 @@ import React from "react";
 import Layout from "@/components/Layout";
 import "bootstrap/dist/css/bootstrap.css";
 import { Teko, Gideon_Roman } from "next/font/google";
+import Head from "next/head";
 
 const teko = Teko({
   variable: "--teko-font",
@@ -19,6 +20,9 @@ const giden = Gideon_Roman({
 export default function App({ Component, pageProps }) {
   return (
     <div className={`w-full overflow-clip ${teko.variable} ${giden.variable}`}>
+      <Head>
+        <title>IEEE at UCR</title>
+      </Head>
       <Layout>
         <Component {...pageProps} />
       </Layout>
