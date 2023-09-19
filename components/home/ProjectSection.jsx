@@ -16,7 +16,9 @@ const ProjectSection = () => {
                 key={index}
                 index={index}
                 name={project.title}
-                color={project.color}
+                textColor={project.textColor}
+                bgColor={project.bgColor}
+                borderColor={project.borderColor}
                 logoIcon={project.logo}
                 links={project.links}
                 detail={project.detail}
