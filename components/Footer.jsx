@@ -1,9 +1,8 @@
 import React from "react";
 import ieeelogo from "../public/assets/ieee-logo.svg";
-import { BsDiscord } from "react-icons/bs";
-import { GrMail } from "react-icons/gr";
 import { motion } from "framer-motion";
 import footer from "../public/assets/footer.svg";
+import { icons } from "./data/icons";
 
 const Footer = () => {
   return (
@@ -24,22 +23,22 @@ const Footer = () => {
           </div>
           <div className="pt-1 space-y-2 flex flex-col justify-evenly mr-3">
             <motion.a
-              className="no-underline text-white"
+              className="no-underline text-white text-2xl md:text-4xl"
               transition={{ type: "spring", stiffness: 500 }}
               whileHover={{ scale: 1.2 }}
               target="_blank"
               href="https://discord.gg/Ugjp6Us"
             >
-              <BsDiscord className=" text-2xl md:text-5xl" />
+              {icons["discord"]}
             </motion.a>
             <motion.a
-              className="no-underline text-white"
+              className="no-underline text-white text-2xl md:text-4xl"
               transition={{ type: "spring", stiffness: 500 }}
               whileHover={{ scale: 1.2 }}
               target="_blank"
               href="https://ieeeucr.github.io/subscribe.html"
             >
-              <GrMail className=" text-2xl md:text-5xl" />
+              {icons["email"]}
             </motion.a>
           </div>
         </div>
