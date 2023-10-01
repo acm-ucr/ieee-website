@@ -57,6 +57,8 @@ jobs:
         run: npm i
       - name: Build with Next.js
         run: npm run build
+      - name: Static HTML export with Next.js
+        run: npm run export
       - name: touch
         run: touch ./.nojekyll
       - name: Upload artifact
