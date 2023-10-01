@@ -26,7 +26,7 @@ This project is built using [Next.js](https://nextjs.org), a React framework. Ne
 The following environment variables are required and must be stored in an `.env` file:
 
 ```env
-NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL=
+N/A
 ```
 
 ## Commands

@@ -16,7 +16,7 @@ const CalendarEvents = () => {
     const eventList = [];
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&timeMin=2023-10-08T21:58:44.000Z`
+        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&timeMin=2023-10-08T21:58:44.000Z`
       )
       .then((result) => {
         result.data.items.map((event) => {
