@@ -1,13 +1,13 @@
 export const boards = [
   {
     position: "Advisor",
-    name: "Dr. Hyoseung Kim",
-    email: "hyoseung@ucr.edu",
+    name: "Dr. Jia Chen",
+    email: "jiac@ucr.edu",
   },
   {
     position: "Chair",
-    name: "Alexander Hickerson",
-    email: "ahick017@ucr.edu",
+    name: "Danny Topete",
+    email: "dtope004@ucr.edu",
   },
   {
     position: "Vice Chair",
