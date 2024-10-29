@@ -11,38 +11,33 @@ export const boards = [
   },
   {
     position: "Vice Chair",
-    name: "Harrison Cooper",
-    email: "hcoop006@ucr.edu",
+    name: "Ryan Nguyen",
+    email: "rnguy135@ucr.edu",
   },
   {
     position: "Treasurer",
-    name: "Kiana Dumdumaya",
-    email: "kdumd001@ucr.edu",
+    name: "Charlize Esperza",
+    email: "cespa014@ucr.edu",
   },
   {
     position: "Secretary/Webmaster",
-    name: "Anmol Sharma",
-    email: "ashar120@ucr.edu",
+    name: "Faith Thai",
+    email: "fthai001@ucr.edu",
   },
   {
     position: "Program Chair",
-    name: "Nicolas Kang",
-    email: "kang017@ucr.edu",
+    name: "Isabela Sforcin",
+    email: "ialve001@ucr.edu",
   },
   {
     position: "Professional Development Chair",
-    name: "Rama Chunduri",
-    email: "rchun043@ucr.edu",
-  },
-  {
-    position: "Robotics Coordinator",
-    name: "Mena Hanna",
-    email: "mhann047@ucr.edu",
+    name: "Vardhit Veeramachaeni",
+    email: "vveer003@ucr.edu",
   },
   {
     position: "Fundraising Chair",
-    name: "Sarai Herrera",
-    email: "sherr062@ucr.edu",
+    name: "Audrey Cho",
+    email: "acho064@ucr.edu",
   },
 ];
 
