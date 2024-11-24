@@ -1,7 +1,21 @@
+import vexU1 from "../../public/pictures/vexu/vexU1.webp";
+import vexU2 from "../../public/pictures/vexu/vexU2.webp";
+import vexU3 from "../../public/pictures/vexu/vexU3.webp";
+import vexU4 from "../../public/pictures/vexu/vexU4.webp";
+import vexU5 from "../../public/pictures/vexu/vexU5.webp";
+import vexU6 from "../../public/pictures/vexu/vexU6.webp";
+
 export const vexUPage = [
   {
     type: "title",
     text: "About VEXU Robotics",
+  },
+  {
+    type: "picture",
+    content: {
+      src: vexU5.src,
+      width: 12,
+    },
   },
   {
     type: "text",
@@ -40,6 +54,34 @@ export const vexUPage = [
     ],
   },
   {
+    type: "picture",
+    content: {
+      src: vexU3.src,
+      width: 6,
+    },
+  },
+  {
+    type: "picture",
+    content: {
+      src: vexU4.src,
+      width: 6,
+    },
+  },
+  {
+    type: "picture",
+    content: {
+      src: vexU1.src,
+      width: 6,
+    },
+  },
+  {
+    type: "picture",
+    content: {
+      src: vexU2.src,
+      width: 6,
+    },
+  },
+  {
     type: "title",
     text: "Condensed Summary",
   },
@@ -50,5 +92,12 @@ export const vexUPage = [
         text: "Ursa Mechanica is the VEXU robotics team at the University of California, Riverside. With 10+ active members, we design, build, and test two robots each year, aiming to qualify for the VEXU World Championships. We proudly placed in the 90th percentile at the 2023 Championships and earned the Excellence Award for 2024. Join us for hands-on experience in engineering and science as we compete at CSUN on January 18th and Mt. SAC on February 15th.",
       },
     ],
+  },
+  {
+    type: "picture",
+    content: {
+      src: vexU6.src,
+      width: 12,
+    },
   },
 ];
