@@ -9,6 +9,10 @@ import solacor from "../../public/pictures/solarcar/solarcar.svg";
 import robosub from "../../public/pictures/robosub/robosub.webp";
 
 import vexu from "../../public/pictures/vexu/vexu.webp";
+
+import vexU5 from "../../public/pictures/vexu/vexU5.webp";
+import vexU6 from "../../public/pictures/vexu/vexU6.webp";
+
 export const projects = [
   {
     title: "Solar Car",
@@ -77,8 +81,8 @@ export const projects = [
       email: "ucrvexrobotics@gmail.com",
       website: "https://discord.gg/rT8NWQbxtR",
     },
-    img1: vexu.src,
-    img2: vexu.src,
-    text: "VexU",
+    img1: vexU6.src,
+    img2: vexU5.src,
+    text: "We are Ursa Mechanica, the VexU robotics team from University of California, Riverside. We design, build, and test robots to acheive our goal of qualifying in the VexU World Championships. We strive to learn and grow in our ability in robotics.",
   },
 ];
