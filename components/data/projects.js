@@ -67,7 +67,7 @@ export const projects = [
   },
   {
     title: "VexU",
-    detail: "",
+    detail: "vexU",
     color: "pink",
     textColor: "text-ieee-pink hover:text-ieee-pink",
     bgColor: "bg-ieee-pink",
