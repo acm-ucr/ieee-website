@@ -1,34 +1,33 @@
-import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import MenuItem from "./events/MenuItems";
-import { useState } from "react";
 import logo from "../public/assets/ieee-only-logo-blue.svg";
+import { usePathname } from "next/navigation";
 
 const items = [
   {
     name: "About",
-    link: "about",
+    link: "/about",
   },
   {
     name: "Projects",
-    link: "projects",
+    link: "/projects",
   },
   {
     name: "Events",
-    link: "events",
+    link: "/events",
   },
   {
     name: "Board",
-    link: "board",
+    link: "/board",
   },
 ];
 
 const Navigation = () => {
-  const [selected, setSelected] = useState(0);
-  const [isHovered, setIsHovered] = useState(0);
+  const pathname = usePathname();
+
   return (
     <>
       <Navbar
@@ -38,11 +37,7 @@ const Navigation = () => {
         fixed="top"
       >
         <Navbar.Brand>
-          <Link
-            href="/"
-            className="no-underline m-0"
-            onClick={() => setSelected("Logo")}
-          >
+          <Link href="/" className="no-underline m-0">
             <div className="mt-1 mb-2 ml-2 flex justify-center items-center font-teko text-white text-5xl">
               <>
                 <img src={logo.src} className="w-10 mr-2" />
@@ -59,18 +54,17 @@ const Navigation = () => {
         </Navbar.Toggle>
         <Navbar.Collapse className="w-full h-full items-center md:justify-end justify-center">
           <Nav className="text-2xl font-teko flex justify-evenly items-center">
-            {items.map((item, index) => (
+            {items.map(({ name, link }, index) => (
               <MenuItem
-                text={item.name}
-                link={`/${item.link}`}
-                name={item.name}
+                text={name}
+                link={link}
+                name={name}
                 key={index}
                 index={index}
                 onMouseOver={() => setIsHovered(item.name)}
                 onMouseOut={() => setIsHovered(0)}
-                selected={selected == item.name}
-                onClick={() => setSelected(item.name)}
-                Hovered={isHovered === item.name}
+                selected={pathname === link}
+                Hovered={pathname === link}
               />
             ))}
           </Nav>
