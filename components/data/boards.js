@@ -11,13 +11,13 @@ export const boards = [
   },
   {
     position: "Vice Chair",
-    name: "Ryan Nguyen",
-    email: "rnguy135@ucr.edu",
+    name: "Isabela Sforcin",
+    email: "ialve001@ucr.edu",
   },
   {
     position: "Treasurer",
-    name: "Charlize Esperza",
-    email: "cespa014@ucr.edu",
+    name: "Joshua Ha",
+    email: "jha066@ucr.edu",
   },
   {
     position: "Secretary/Webmaster",
@@ -26,16 +26,16 @@ export const boards = [
   },
   {
     position: "Program Chair",
-    name: "Isabela Sforcin",
-    email: "ialve001@ucr.edu",
-  },
-  {
-    position: "Professional Development Chair",
-    name: "Vardhit Veeramachaeni",
-    email: "vveer003@ucr.edu",
+    name: "Sophia Bai",
+    email: "sbai019@ucr.edu",
   },
   {
     position: "Fundraising Chair",
+    name: "Gianna Liong",
+    email: "glion001@ucr.edu",
+  },
+  {
+    position: "Parts Kit Manager",
     name: "Audrey Cho",
     email: "acho064@ucr.edu",
   },
