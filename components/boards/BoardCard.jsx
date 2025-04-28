@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { MdOutlineEmail } from "react-icons/md";
 
 const BoardCard = ({
@@ -23,12 +23,7 @@ const BoardCard = ({
             <MdOutlineEmail className="text-xl text-white hover:cursor-pointer ml-5" />
           </a>
         </div>
-        <Image
-          src={image}
-          alt={"bruhhh"}
-          width={200}
-          height={200}
-        />
+        <Image src={image} alt={"Missing Photo"} width={200} height={200} />
         <div
           className={`${bgColor} mt-3 shadow-[10px_-8px_0px_0px] ${shadowColor} w-10/12`}
         >
