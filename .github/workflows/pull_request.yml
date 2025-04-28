@@ -34,6 +34,18 @@ jobs:
       - run: npm ci
       - run: npm run eslint
 
+  images:
+    name: images
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: acm-ucr/images@v2
+        with:
+          branch: ${{ github.head_ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     name: build
     runs-on: ubuntu-latest
