@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/legacy/image";
 import { MdOutlineEmail } from "react-icons/md";
 
 const BoardCard = ({
@@ -8,12 +9,13 @@ const BoardCard = ({
   textColor,
   shadowColor,
   email,
+  image,
 }) => {
   return (
     <div className="flex flex-row m-10 w-full">
       <div className={`${bgColor} h-28 w-2 mr-5`}></div>
-      <div className="w-full">
-        <div className="flex w-full justify-start items-center">
+      <div className="w-full ">
+        <div className="flex w-full justify-start items-center ">
           <p className={`font-teko ${textColor} lg:text-3xl text-lg m-0`}>
             {position}
           </p>
@@ -21,10 +23,11 @@ const BoardCard = ({
             <MdOutlineEmail className="text-xl text-white hover:cursor-pointer ml-5" />
           </a>
         </div>
+        <Image src={image} alt={"Missing Photo"} width={200} height={200} />
         <div
           className={`${bgColor} mt-3 shadow-[10px_-8px_0px_0px] ${shadowColor} w-10/12`}
         >
-          <p className="text-center px-4 py-2 text-2xl font-teko">{name}</p>
+          <p className="text-center px-4 py-2 text-2xl  font-teko">{name}</p>
         </div>
       </div>
     </div>

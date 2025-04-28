@@ -18,6 +18,7 @@ export default function board() {
               textColor={colors[index % colors.length].textColor}
               shadowColor={colors[index % colors.length].shadowColor}
               email={board.email}
+              image={board.image}
             />
           </Col>
         ))}
