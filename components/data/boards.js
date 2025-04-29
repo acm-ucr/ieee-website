@@ -4,9 +4,11 @@ import Faith from "@/public/board/Faith_Square.webp";
 import Gianna from "@/public/board/Gianna_Square.webp";
 import Isabela from "@/public/board/Isabela_square.webp";
 import Joshua from "@/public/board/Joshua_Ha.webp";
-
+import Sophia from "@/public/board/sophia.jpg";
+import JiaChen from "@/public/board/jiachen.jpeg";
 export const boards = [
   {
+    image: JiaChen,
     position: "Advisor",
     name: "Dr. Jia Chen",
     email: "jiac@ucr.edu",
@@ -36,6 +38,7 @@ export const boards = [
     email: "fthai001@ucr.edu",
   },
   {
+    image: Sophia,
     position: "Program Chair",
     name: "Sophia Bai",
     email: "sbai019@ucr.edu",
