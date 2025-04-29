@@ -1,9 +1,9 @@
-import Audrey from "@/public/board/Audrey_square.webp";
+import Audrey from "@/public/board/audrey.webp";
 import Danny from "@/public/board/Danny.webp";
-import Faith from "@/public/board/Faith_Square.webp";
-import Gianna from "@/public/board/Gianna_Square.webp";
-import Isabela from "@/public/board/Isabela_square.webp";
-import Joshua from "@/public/board/Joshua_Ha.webp";
+import Faith from "@/public/board/faith.webp";
+import Gianna from "@/public/board/gianna.webp";
+import Isabela from "@/public/board/isabela.webp";
+import Joshua from "@/public/board/joshua.webp";
 import Sophia from "@/public/board/sophia.jpg";
 import JiaChen from "@/public/board/jiachen.jpeg";
 export const boards = [
