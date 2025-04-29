@@ -3,7 +3,8 @@ import BoardCard from "@/components/boards/BoardCard";
 import { Row, Col } from "react-bootstrap";
 import { colors, boards } from "@/components/data/boards";
 import Title from "@/components/Title";
-
+import Image from "next/legacy/image";
+import Website from "@/public/board/website.webp";
 export default function board() {
   return (
     <div className="w-full flex flex-col items-center justify-center my-16">
@@ -23,6 +24,9 @@ export default function board() {
           </Col>
         ))}
       </Row>
+      <div className="w-5/12 mx-auto">
+        <Image src={Website} alt="Website" />
+      </div>
     </div>
   );
 }

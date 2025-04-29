@@ -5,7 +5,7 @@ import Gear from "@/components/Gear";
 import pinkGear from "../public/assets/gear-stroke-pink-blue.svg";
 import blueGear from "../public/assets/gear-lightblue.svg";
 import { motion } from "framer-motion";
-
+import Banner from "@/public/board/banner.webp";
 const about = () => {
   return (
     <div className="mt-3 w-10/12 md:w-1/2 flex items-center flex-col z-10 ">
@@ -63,6 +63,14 @@ const about = () => {
         engineers with career enhancement, engineering social events, and growth
         in their respective professions.
       </motion.p>
+      <motion.img
+        initial={{ y: -30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, type: "teew", delay: 0.3 }}
+        className="w-full mt-10 mb-20 z-50 relative"
+        src={Banner.src}
+        alt="Banner"
+      />
     </div>
   );
 };
