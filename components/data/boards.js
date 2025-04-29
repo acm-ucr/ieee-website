@@ -4,8 +4,8 @@ import Faith from "@/public/board/faith.webp";
 import Gianna from "@/public/board/gianna.webp";
 import Isabela from "@/public/board/isabela.webp";
 import Joshua from "@/public/board/joshua.webp";
-import Sophia from "@/public/board/sophia.jpg";
-import JiaChen from "@/public/board/jiachen.jpeg";
+import Sophia from "@/public/board/sophia.webp";
+import JiaChen from "@/public/board/jiachen.webp";
 export const boards = [
   {
     image: JiaChen,
